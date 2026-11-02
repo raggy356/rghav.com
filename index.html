@@ -12,7 +12,7 @@
 <meta property="og:image" content="https://rghav.com/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0B0C10">
-<meta name="build" content="20261102T154114Z">
+<meta name="build" content="20261102T154546Z">
 <meta http-equiv="Cache-Control" content="no-cache">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B0C10'/%3E%3Ccircle cx='32' cy='32' r='11' fill='%23E63946'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -185,13 +185,40 @@ footer .meta .ic{width:16px;height:16px;color:var(--red-2)}
 
 .meme{margin:40px auto 0;max-width:520px}
 .meme .fr{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line-2);background:var(--surface);transform:rotate(-1.2deg);transition:transform .6s var(--ease)}
-.meme:hover .fr{transform:rotate(0)}
 .meme img{display:block;width:100%;height:auto}
 .meme figcaption{margin-top:14px;text-align:center;font-family:var(--serif);font-style:italic;font-size:1.1rem;color:var(--muted);line-height:1.4}
 .meme figcaption b{font-style:normal;color:var(--red-2);font-weight:500}
+/* ambient motion (transforms + opacity only) */
+.batfly{position:absolute;top:18%;left:0;width:22px;height:22px;color:var(--red-2);opacity:0;pointer-events:none;z-index:2;animation:glide 11s linear infinite 3s}
+.batfly svg{width:100%;height:100%;animation:flapwing .22s ease-in-out infinite alternate;transform-origin:50% 45%}
+@keyframes glide{0%{transform:translate(-12vw,0) rotate(6deg);opacity:0}3%{opacity:.85}12%{transform:translate(18vw,-26px) rotate(-4deg)}24%{transform:translate(48vw,10px) rotate(5deg)}36%{transform:translate(80vw,-22px) rotate(-3deg)}44%{transform:translate(112vw,4px) rotate(4deg);opacity:.85}46%,100%{transform:translate(112vw,4px);opacity:0}}
+@keyframes flapwing{from{transform:scaleY(1)}to{transform:scaleY(.55)}}
+.embers{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+.embers i{position:absolute;bottom:-10px;width:4px;height:4px;border-radius:50%;background:var(--red-2);opacity:0;animation:ember linear infinite;box-shadow:0 0 6px 1px rgba(230,57,70,.5)}
+@keyframes ember{0%{transform:translate(0,0) scale(.6);opacity:0}10%{opacity:.75}60%{opacity:.5}100%{transform:translate(var(--dx),-72vh) scale(1.1);opacity:0}}
+.herocat{perspective:600px}
+.herocat img{animation:bob 4.2s ease-in-out infinite alternate;transform-origin:50% 60%}
+@keyframes bob{from{transform:translateY(0) rotate(0)}to{transform:translateY(-5px) rotate(.6deg)}}
+.herocat.tilt img{animation:none;transition:transform .35s var(--ease)}
+.ev.hl{position:relative}
+.ev.hl::after{content:"";position:absolute;inset:-1px;border-radius:16px;box-shadow:0 0 46px 2px rgba(230,57,70,.32);opacity:.25;pointer-events:none;animation:breathe2 3.6s ease-in-out infinite alternate}
+@keyframes breathe2{from{opacity:.15}to{opacity:.8}}
+.bar.drug .fill{position:relative;overflow:visible}
+.bar.drug .fill::after{content:"";position:absolute;right:-3px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:var(--red-2);box-shadow:0 0 0 0 rgba(255,90,102,.6);opacity:0}
+.in .bar.drug .fill::after{animation:tip 2.2s ease-out infinite 1.4s}
+@keyframes tip{0%{opacity:1;box-shadow:0 0 0 0 rgba(255,90,102,.55)}70%{opacity:1;box-shadow:0 0 0 9px rgba(255,90,102,0)}100%{opacity:1;box-shadow:0 0 0 0 rgba(255,90,102,0)}}
+.step::before{background-size:220% 100%;animation:shimmer 6s linear infinite}
+@keyframes shimmer{from{background-position:0% 50%}to{background-position:220% 50%}}
+.meme .fr{animation:sway 5.5s ease-in-out infinite alternate}
+.meme:nth-of-type(even) .fr{animation-duration:6.5s;animation-direction:alternate-reverse}
+@keyframes sway{from{transform:rotate(-1.3deg)}to{transform:rotate(-.4deg)}}
+.meme:hover .fr{animation-play-state:paused}
 .reveal{opacity:0;transform:translateY(20px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:calc(var(--i,0)*80ms)}
 .reveal.in{opacity:1;transform:none}
 
+@media (max-width:719px){
+  .crow .lab{flex-direction:column;align-items:flex-start;gap:2px}
+}
 @media (min-width:720px){
   :root{--gutter:40px}
   section{padding:110px 0}
@@ -223,7 +250,7 @@ footer .meta .ic{width:16px;height:16px;color:var(--red-2)}
 <nav class="nav"><a class="mark" href="#top">R.</a><span class="chapter" id="chapter">Research brief</span></nav>
 
 <header class="hero" id="top">
-  <div class="grain"></div><div class="glow"></div>
+  <div class="grain"></div><div class="glow"></div><div class="embers"><i style="left:43%;--dx:-21px;animation-duration:9.4s;animation-delay:0.5s;width:3px;height:4px"></i><i style="left:76%;--dx:-33px;animation-duration:12.5s;animation-delay:2.1s;width:3px;height:5px"></i><i style="left:55%;--dx:-32px;animation-duration:8.4s;animation-delay:5.5s;width:3px;height:3px"></i><i style="left:30%;--dx:40px;animation-duration:10.8s;animation-delay:9.5s;width:5px;height:3px"></i><i style="left:30%;--dx:-35px;animation-duration:10.3s;animation-delay:1.3s;width:5px;height:3px"></i><i style="left:71%;--dx:-25px;animation-duration:10.4s;animation-delay:5.6s;width:3px;height:3px"></i><i style="left:76%;--dx:33px;animation-duration:10.8s;animation-delay:3.7s;width:3px;height:3px"></i><i style="left:81%;--dx:-14px;animation-duration:10.0s;animation-delay:5.3s;width:4px;height:5px"></i><i style="left:76%;--dx:18px;animation-duration:9.2s;animation-delay:2.5s;width:3px;height:3px"></i><i style="left:12%;--dx:33px;animation-duration:8.8s;animation-delay:5.0s;width:4px;height:5px"></i><i style="left:38%;--dx:37px;animation-duration:12.9s;animation-delay:1.2s;width:5px;height:3px"></i><i style="left:98%;--dx:3px;animation-duration:7.9s;animation-delay:4.9s;width:3px;height:3px"></i><i style="left:73%;--dx:33px;animation-duration:11.7s;animation-delay:8.2s;width:4px;height:4px"></i><i style="left:78%;--dx:23px;animation-duration:10.5s;animation-delay:4.6s;width:3px;height:4px"></i></div><div class="batfly"><svg aria-hidden="true"><use href="#i-bat"/></svg></div>
   <div class="wrap">
     <div class="eyebrow" style="opacity:0;animation:fade .8s var(--ease) forwards .05s">A research brief &middot; November 2026</div>
     <h1 id="h1">Endometriosis. What <em>actually</em> works.</h1>
@@ -432,6 +459,19 @@ footer .meta .ic{width:16px;height:16px;color:var(--red-2)}
     if(label.textContent!==cur) label.textContent=cur;
   }
   window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  // desktop only: the hero cat tilts toward the cursor; phones keep the bob
+  if(window.matchMedia('(hover:hover) and (pointer:fine)').matches){
+    var hc=document.querySelector('.herocat'), hero=document.querySelector('.hero');
+    if(hc&&hero){
+      hero.addEventListener('mousemove',function(e){
+        var r=hc.getBoundingClientRect(), cx=r.left+r.width/2, cy=r.top+r.height/2;
+        var dx=(e.clientX-cx)/window.innerWidth, dy=(e.clientY-cy)/window.innerHeight;
+        hc.classList.add('tilt');
+        hc.querySelector('img').style.transform='rotateY('+(dx*14)+'deg) rotateX('+(-dy*10)+'deg) translateY(-2px)';
+      });
+      hero.addEventListener('mouseleave',function(){ hc.classList.remove('tilt'); hc.querySelector('img').style.transform=''; });
+    }
+  }
 })();
 </script>
 </body>
