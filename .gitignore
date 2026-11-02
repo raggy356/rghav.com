@@ -1,2 +1,5 @@
-shot_*.png
-og.html
+render/
+.last_build
+__pycache__/
+*/_og.html
+.playwright-cli/
