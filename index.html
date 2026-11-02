@@ -50,7 +50,7 @@ h3{font-size:1.3rem;line-height:1.15}
 .lede b{color:var(--text);font-weight:500}
 
 /* hero */
-.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:120px 0 56px;overflow:hidden}
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:96px 0 48px;overflow:hidden}
 .hero .glow{position:absolute;inset:auto -30% -45% -30%;height:75vh;background:radial-gradient(ellipse at 50% 100%,rgba(230,57,70,.40),rgba(138,16,32,.16) 36%,rgba(230,57,70,0) 64%);pointer-events:none;animation:breathe 8s ease-in-out infinite}
 @keyframes breathe{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-4%) scale(1.06)}}
 .hero .grain{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.07'/%3E%3C/svg%3E");pointer-events:none;mix-blend-mode:overlay}
@@ -58,7 +58,9 @@ h3{font-size:1.3rem;line-height:1.15}
 .hero h1 .w span{display:inline-block;transform:translateY(110%);animation:rise 1s var(--ease) forwards;animation-delay:calc(var(--i)*.09s + .15s)}
 @keyframes rise{to{transform:translateY(0)}}
 .hero h1 em{font-style:italic;color:var(--red-2);font-variation-settings:"opsz" 144,"wght" 300}
-.dedic{margin-top:26px;display:flex;align-items:center;gap:12px;font-family:var(--serif);font-size:1.25rem;color:var(--text);opacity:0;animation:fade 1s var(--ease) forwards .8s}
+.herocat{margin-top:30px;width:min(46vw,210px);border-radius:14px;overflow:hidden;border:1px solid var(--line-2);transform:rotate(-2deg);box-shadow:0 24px 50px -24px rgba(230,57,70,.45);opacity:0;animation:fade 1s var(--ease) forwards .7s}
+.herocat img{display:block;width:100%;height:auto}
+.dedic{margin-top:22px;display:flex;align-items:center;gap:12px;font-family:var(--serif);font-size:1.25rem;color:var(--text);opacity:0;animation:fade 1s var(--ease) forwards .8s}
 .dedic .ics{display:flex;gap:8px;color:var(--red-2)}
 .dedic .ics .ic{width:18px;height:18px}
 .dedic .ics .ic:nth-child(1){animation:flap 2.6s ease-in-out infinite}
@@ -223,6 +225,7 @@ footer .meta .ic{width:16px;height:16px;color:var(--red-2)}
   <div class="wrap">
     <div class="eyebrow" style="opacity:0;animation:fade .8s var(--ease) forwards .05s">A research brief &middot; November 2026</div>
     <h1 id="h1">Endometriosis. What <em>actually</em> works.</h1>
+    <div class="herocat"><img src="cats/fridge.jpg" alt="A black cat lying upside down inside a fridge next to a carton of oat milk" width="675" height="900"></div>
     <div class="dedic"><span class="ics"><svg class="ic" aria-hidden="true"><use href="#i-bat"/></svg><svg class="ic" aria-hidden="true"><use href="#i-moon-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg></span><span>For Dracula's wife.</span></div>
     <p class="lede">I ran a research agent across the clinical trials, the Cochrane reviews and the drug pipeline, had it put this site together, and reviewed the whole thing.</p>
     <div class="cta"><span class="line"></span><span>Scroll</span></div>
@@ -270,7 +273,7 @@ footer .meta .ic{width:16px;height:16px;color:var(--red-2)}
       <div class="crow"><div class="lab"><b>Pelvic floor Botox</b><small>reported benefit at 1 month</small></div><div class="bars"><div class="bar drug"><div class="track"><div class="fill" style="--w:73%"></div></div><div class="v">73%</div></div><div class="bar pl"><div class="track"><div class="fill" style="--w:29%"></div></div><div class="v">29%</div></div></div></div>
       <div class="cap">Relugolix: SPIRIT 1 and 2, Lancet 2022, 1,261 women, placebo figures averaged across the two trials. Linzagolix: EDELWEISS 3, 2024. Botox: NIH Phase 2, 29 women, double-masked.</div>
     </div>
-    <figure class="meme reveal"><div class="fr"><img src="cats/fridge.jpg" alt="A black cat lying upside down inside a fridge next to a carton of oat milk" loading="lazy" width="675" height="900"></div><figcaption><b>Intermission.</b> He read the NSAID trial and needed a minute.</figcaption></figure>
+    <!--INTERMISSION-->
   </div>
 </section>
 
