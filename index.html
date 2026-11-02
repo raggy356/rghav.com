@@ -4,403 +4,346 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Endometriosis. What actually works.</title>
-<meta name="description" content="A research brief on endometriosis: what relieves the pain now, what the trials say, and what's coming.">
+<meta name="description" content="A research brief on endometriosis: what relieves the pain now, what the trials show, and what's coming.">
 <meta property="og:title" content="Endometriosis. What actually works.">
-<meta property="og:description" content="The clinical trials, the Cochrane reviews and the drug pipeline, read and written up on one honest page.">
+<meta property="og:description" content="The trials, the Cochrane reviews and the drug pipeline, read and written up on one page.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://rghav.com/">
 <meta property="og:image" content="https://rghav.com/og.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#101218">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101218'/%3E%3Ccircle cx='32' cy='32' r='11' fill='%23C4142A'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#0B0C10">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B0C10'/%3E%3Ccircle cx='32' cy='32' r='11' fill='%23E63946'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#101218; --ink-2:#1A1D26; --ink-3:#2A2E3A;
-  --paper:#F4F2EE; --paper-2:#EAE7E1; --paper-3:#DAD6CE;
-  --red:#C4142A; --red-2:#E63946; --red-deep:#7A0C18; --grad:linear-gradient(90deg,#7A0C18,#C4142A 55%,#E63946);
-  --mist:#8A8F99; --mist-2:#B9BDC6;
-  --text:#15171E; --text-soft:#4A4E59;
+  --bg:#0B0C10; --bg-2:#101218; --surface:#14161C; --surface-2:#1A1D25; --line:#262A34; --line-2:#333845;
+  --text:#F2F0EB; --muted:#9AA0AB; --muted-2:#6E7480;
+  --red:#E63946; --red-2:#FF5A66; --red-deep:#8A1020;
+  --grad:linear-gradient(90deg,#8A1020,#E63946 60%,#FF5A66);
   --serif:'Fraunces',Georgia,serif; --sans:'Inter',system-ui,-apple-system,sans-serif;
-  --gutter:20px; --max:1100px;
-  --ease:cubic-bezier(.2,.7,.2,1);
+  --gutter:20px; --max:1040px; --ease:cubic-bezier(.2,.7,.2,1);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:var(--sans);font-size:17px;line-height:1.6;color:var(--text);background:var(--paper);overflow-x:hidden}
-img,svg{display:block;max-width:100%}
+body{font-family:var(--sans);font-size:17px;line-height:1.6;color:var(--text);background:var(--bg);overflow-x:hidden}
+svg{display:block}
 a{color:inherit}
 ::selection{background:var(--red);color:#fff}
+.ic{width:22px;height:22px;flex:none}
 
-/* progress */
-.progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--grad);z-index:100;transition:width .1s linear}
+.progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--grad);z-index:100}
+.nav{position:fixed;top:0;left:0;right:0;z-index:90;display:flex;align-items:center;justify-content:space-between;padding:16px var(--gutter);color:var(--text);pointer-events:none;background:linear-gradient(var(--bg),rgba(11,12,16,0))}
+.nav .mark{font-family:var(--serif);font-weight:600;font-size:18px;text-decoration:none;pointer-events:auto}
+.nav .chapter{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 
-/* nav */
-.nav{position:fixed;top:0;left:0;right:0;z-index:90;display:flex;align-items:center;justify-content:space-between;padding:16px var(--gutter);mix-blend-mode:difference;color:#fff;pointer-events:none}
-.nav .mark{font-family:var(--serif);font-weight:600;font-size:18px;letter-spacing:.02em;pointer-events:auto;text-decoration:none}
-.nav .chapter{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.8}
-
-/* layout */
 .wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
-section{position:relative;padding:88px 0}
-.dark{background:var(--ink);color:var(--paper)}
-.dark .eyebrow{color:var(--red-2)}
-.dark .lede{color:var(--mist-2)}
-
-.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);font-weight:600;display:flex;align-items:center;gap:12px;margin-bottom:22px}
-.eyebrow::before{content:"";width:28px;height:1px;background:currentColor;opacity:.7}
-h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;line-height:1.02}
-h1{font-size:clamp(2.6rem,11vw,6.4rem);font-variation-settings:"opsz" 144}
-h2{font-size:clamp(2rem,8vw,4.2rem);margin-bottom:22px;font-variation-settings:"opsz" 144}
-h3{font-size:1.45rem;line-height:1.15;margin-bottom:8px}
-.lede{font-size:1.1rem;line-height:1.55;color:var(--text-soft);max-width:38em}
-.lede strong{color:inherit;font-weight:600}
-p+p{margin-top:1em}
+section{position:relative;padding:84px 0;border-top:1px solid var(--line)}
+.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-2);font-weight:600;display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.eyebrow::before{content:"";width:26px;height:1px;background:currentColor}
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;line-height:1.04;font-variation-settings:"opsz" 144}
+h1{font-size:clamp(2.7rem,11.5vw,6.6rem);line-height:.98}
+h2{font-size:clamp(2rem,8vw,3.8rem);margin-bottom:18px}
+h3{font-size:1.3rem;line-height:1.15}
+.lede{font-size:1.08rem;line-height:1.55;color:var(--muted);max-width:36em}
+.lede b{color:var(--text);font-weight:500}
 
 /* hero */
-.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:120px 0 48px;overflow:hidden}
-.hero .glow{position:absolute;inset:auto -30% -40% -30%;height:70vh;background:radial-gradient(ellipse at 50% 100%,rgba(196,20,42,.42),rgba(122,12,24,.18) 35%,rgba(196,20,42,0) 62%);pointer-events:none;animation:breathe 7s ease-in-out infinite}
-@keyframes breathe{0%,100%{transform:translateY(0) scale(1);opacity:.9}50%{transform:translateY(-4%) scale(1.06);opacity:1}}
-.hero .grain{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.06'/%3E%3C/svg%3E");pointer-events:none;mix-blend-mode:overlay}
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:120px 0 56px;overflow:hidden}
+.hero .glow{position:absolute;inset:auto -30% -45% -30%;height:75vh;background:radial-gradient(ellipse at 50% 100%,rgba(230,57,70,.40),rgba(138,16,32,.16) 36%,rgba(230,57,70,0) 64%);pointer-events:none;animation:breathe 8s ease-in-out infinite}
+@keyframes breathe{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-4%) scale(1.06)}}
+.hero .grain{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.07'/%3E%3C/svg%3E");pointer-events:none;mix-blend-mode:overlay}
 .hero h1 .w{display:inline-block;overflow:hidden;vertical-align:bottom}
 .hero h1 .w span{display:inline-block;transform:translateY(110%);animation:rise 1s var(--ease) forwards;animation-delay:calc(var(--i)*.09s + .15s)}
 @keyframes rise{to{transform:translateY(0)}}
 .hero h1 em{font-style:italic;color:var(--red-2);font-variation-settings:"opsz" 144,"wght" 300}
-.hero .lede{margin-top:28px;opacity:0;animation:fade 1s var(--ease) forwards;animation-delay:.9s}
-.hero .cta{margin-top:40px;display:flex;align-items:center;gap:14px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mist-2);opacity:0;animation:fade 1s var(--ease) forwards;animation-delay:1.2s}
+.dedic{margin-top:26px;display:flex;align-items:center;gap:12px;font-family:var(--serif);font-size:1.25rem;color:var(--text);opacity:0;animation:fade 1s var(--ease) forwards .8s}
+.dedic .ics{display:flex;gap:8px;color:var(--red-2)}
+.dedic .ics .ic{width:18px;height:18px}
+.dedic .ics .ic:nth-child(1){animation:flap 2.6s ease-in-out infinite}
+@keyframes flap{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-3px) rotate(-6deg)}}
+.hero .lede{margin-top:18px;opacity:0;animation:fade 1s var(--ease) forwards 1s}
+.hero .cta{margin-top:40px;display:flex;align-items:center;gap:14px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);opacity:0;animation:fade 1s var(--ease) forwards 1.25s}
 .hero .cta .line{width:1px;height:44px;background:linear-gradient(var(--red-2),transparent);animation:drop 1.8s ease-in-out infinite}
 @keyframes drop{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 @keyframes fade{to{opacity:1}}
 
-/* stats */
-.stats{display:grid;gap:14px;margin-top:40px}
-.stat{padding:26px 22px;border:1px solid var(--paper-3);background:#fff8;border-radius:14px;position:relative;overflow:hidden}
-.stat .n{font-family:var(--serif);font-size:3.2rem;line-height:1;letter-spacing:-.03em;font-variation-settings:"opsz" 144}
-.stat .n small{font-size:.45em;color:var(--red);margin-left:4px;letter-spacing:0}
-.stat .l{margin-top:10px;color:var(--text-soft);font-size:.95rem;line-height:1.45}
-.stat::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:0;background:var(--grad);transition:width 1.2s var(--ease) .2s}
-.stat.in::after{width:100%}
-.frame-note{margin-top:34px;padding:22px 24px;border-left:3px solid var(--red);border-image:linear-gradient(180deg,#E63946,#7A0C18) 1;background:var(--paper-2);border-radius:0 12px 12px 0;font-size:1.02rem}
+/* short version */
+.tldr{display:grid;gap:0;margin-top:30px;border-top:1px solid var(--line)}
+.tldr .row{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:22px 0;border-bottom:1px solid var(--line);align-items:start}
+.tldr .row .n{width:44px;height:44px;border-radius:12px;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;color:var(--red-2)}
+.tldr .row p{font-family:var(--serif);font-size:1.28rem;line-height:1.3;letter-spacing:-.01em}
+.tldr .row p b{font-weight:600;color:var(--red-2)}
+.tldr .row small{display:block;margin-top:6px;font-family:var(--sans);font-size:.92rem;color:var(--muted);line-height:1.5}
 
-/* cards */
-.cards{display:grid;gap:14px;margin-top:36px}
-.card{background:#fff;border:1px solid var(--paper-3);border-radius:16px;padding:24px 22px 22px;position:relative;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
-.card:hover{transform:translateY(-3px);box-shadow:0 18px 40px -22px rgba(16,18,24,.35)}
-.card .num{position:absolute;top:18px;right:20px;font-family:var(--serif);font-size:.95rem;color:var(--mist)}
-.card .tag{display:inline-block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--red);margin-bottom:12px}
-.card p{color:var(--text-soft);font-size:.97rem}
-.card .big{font-family:var(--serif);font-size:2.3rem;line-height:1;letter-spacing:-.02em;margin:14px 0 6px;color:var(--text)}
-.card .big small{font-size:.42em;color:var(--mist);font-family:var(--sans);letter-spacing:0;margin-left:6px}
-.meter{display:flex;align-items:center;gap:10px;margin-top:18px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--mist);font-weight:600}
-.meter .bar{flex:1;height:4px;background:var(--paper-3);border-radius:2px;overflow:hidden}
-.meter .bar i{display:block;height:100%;width:0;background:var(--ink);border-radius:2px;transition:width 1.1s var(--ease) .25s}
-.in .meter .bar i{width:var(--w)}
-.meter.strong .bar i{background:var(--ink)}
-.meter.mod .bar i{background:var(--grad)}
-.meter.low .bar i{background:var(--mist)}
-.dark .card{background:var(--ink-2);border-color:var(--ink-3);color:var(--paper)}
-.dark .card p{color:var(--mist-2)}
-.dark .card .big{color:var(--paper)}
-.dark .meter .bar{background:var(--ink-3)}
-.dark .meter.strong .bar i{background:var(--paper)}
+/* ladder */
+.ladder{position:relative;margin-top:36px;display:grid;gap:12px}
+.rung{position:relative;display:grid;grid-template-columns:52px 1fr;gap:16px;padding:22px 20px;border-radius:16px;background:var(--surface);border:1px solid var(--line)}
+.rung .ico{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:var(--surface-2);border:1px solid var(--line-2);color:var(--text)}
+.rung .ico .ic{width:24px;height:24px}
+.rung .k{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:6px}
+.rung p{color:var(--muted);font-size:.96rem;margin-top:6px}
+.rung p b{color:var(--text);font-weight:500}
+.pips{display:flex;align-items:center;gap:6px;margin-top:14px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.pips i{width:18px;height:5px;border-radius:3px;background:var(--line-2);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.pips i.on{background:var(--grad)}
+.in .pips i{transform:scaleX(1)}
+.in .pips i:nth-child(1){transition-delay:.1s}.in .pips i:nth-child(2){transition-delay:.2s}.in .pips i:nth-child(3){transition-delay:.3s}.in .pips i:nth-child(4){transition-delay:.4s}.in .pips i:nth-child(5){transition-delay:.5s}
+.pips span{margin-left:8px}
+.rung.top{background:linear-gradient(160deg,rgba(230,57,70,.16),rgba(138,16,32,.05)),var(--surface);border-color:rgba(230,57,70,.4)}
+.rung.top .ico{background:var(--grad);border-color:transparent;color:#fff}
 
-.aside{margin-top:28px;padding:22px 24px;border-radius:14px;background:var(--ink);color:var(--paper);font-size:.98rem}
-.aside b{color:var(--red-2);font-weight:600}
-.aside p{color:var(--mist-2)}
-.aside p b{color:var(--paper)}
+/* chart */
+.chart{margin-top:34px;padding:26px 20px 18px;border-radius:16px;background:var(--surface);border:1px solid var(--line)}
+.chart .legend{display:flex;gap:18px;font-size:12px;color:var(--muted);margin-bottom:22px;letter-spacing:.04em}
+.chart .legend i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:7px}
+.crow{padding:14px 0;border-top:1px solid var(--line)}
+.crow:first-of-type{border-top:0;padding-top:0}
+.crow .lab{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px}
+.crow .lab b{font-weight:500}
+.crow .lab small{color:var(--muted);font-size:.85rem}
+.bars{display:grid;gap:6px}
+.bar{display:grid;grid-template-columns:1fr 46px;align-items:center;gap:10px}
+.bar .track{height:14px;border-radius:7px;background:var(--bg-2);overflow:hidden}
+.bar .fill{height:100%;width:0;border-radius:7px;transition:width 1.3s var(--ease)}
+.bar.drug .fill{background:var(--grad)}
+.bar.pl .fill{background:var(--line-2)}
+.bar .v{font-family:var(--serif);font-size:1.15rem;text-align:right;line-height:1}
+.bar.pl .v{color:var(--muted)}
+.in .bar .fill{width:var(--w)}
+.chart .cap{margin-top:18px;font-size:.85rem;color:var(--muted);line-height:1.5}
 
-/* split lists */
-.split{display:grid;gap:18px;margin-top:36px}
-.col{padding:26px 22px;border-radius:16px;border:1px solid var(--paper-3);background:#fff}
-.col.no{background:var(--paper-2)}
-.col h3{display:flex;align-items:center;gap:10px;font-size:1.2rem;margin-bottom:16px}
-.col h3 .dot{width:10px;height:10px;border-radius:50%;background:var(--grad)}
-.col.no h3 .dot{background:var(--mist)}
-.item{padding:14px 0;border-top:1px solid var(--paper-3)}
-.item:first-of-type{border-top:0;padding-top:0}
-.item b{display:block;font-weight:600;margin-bottom:3px}
-.item span{color:var(--text-soft);font-size:.95rem}
+/* two-up */
+.duo{display:grid;gap:12px;margin-top:30px}
+.panel{padding:22px 20px;border-radius:16px;background:var(--surface);border:1px solid var(--line)}
+.panel .hd{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.panel .hd .ic{color:var(--red-2);width:24px;height:24px}
+.panel .big{font-family:var(--serif);font-size:2.2rem;line-height:1;letter-spacing:-.02em;margin:8px 0 4px}
+.panel .big small{font-family:var(--sans);font-size:.42em;color:var(--muted);letter-spacing:0;margin-left:6px}
+.panel p{color:var(--muted);font-size:.96rem}
+.note{margin-top:14px;font-size:.92rem;color:var(--muted)}
+
+/* yes / no */
+.yn{display:grid;gap:12px;margin-top:30px}
+.yn .col{padding:22px 20px;border-radius:16px;background:var(--surface);border:1px solid var(--line)}
+.yn .col.no{background:var(--bg-2)}
+.yn h3{display:flex;align-items:center;gap:10px;margin-bottom:8px;font-size:1.15rem}
+.yn h3 .ic{color:var(--red-2)}
+.yn .col.no h3 .ic{color:var(--muted)}
+.li{display:grid;grid-template-columns:20px 1fr;gap:12px;padding:13px 0;border-top:1px solid var(--line);align-items:start}
+.li .ic{width:18px;height:18px;margin-top:3px;color:var(--red-2)}
+.no .li .ic{color:var(--muted-2)}
+.li b{display:block;font-weight:500}
+.li span{color:var(--muted);font-size:.93rem;line-height:1.5}
 
 /* timeline */
-.tl{position:relative;margin-top:44px;padding-left:34px}
-.tl::before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:1px;background:var(--ink-3)}
-.tl .draw{position:absolute;left:9px;top:6px;width:1px;height:0;background:linear-gradient(180deg,#E63946,#7A0C18);transition:height 1.8s var(--ease)}
+.tl{position:relative;margin-top:40px;padding-left:46px}
+.tl::before{content:"";position:absolute;left:17px;top:6px;bottom:6px;width:1px;background:var(--line-2)}
+.tl .draw{position:absolute;left:17px;top:6px;width:1px;height:0;background:linear-gradient(180deg,#FF5A66,#8A1020);transition:height 1.8s var(--ease)}
 .tl.in .draw{height:calc(100% - 12px)}
-.ev{position:relative;padding:0 0 38px}
-.ev::before{content:"";position:absolute;left:-30px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--ink);border:2px solid var(--red);transform:scale(0);transition:transform .5s var(--ease)}
-.ev.in::before{transform:scale(1)}
-.ev .yr{font-family:var(--serif);font-size:2.2rem;line-height:1;color:var(--red-2);letter-spacing:-.02em}
-.ev h3{margin-top:8px;color:var(--paper)}
-.ev p{color:var(--mist-2);font-size:.97rem;margin-top:6px}
-.ev .pill{display:inline-block;margin-top:10px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:6px 10px;border:1px solid var(--ink-3);border-radius:999px;color:var(--mist-2)}
-.ev.hl{padding:22px 22px 30px;margin-left:-14px;border-radius:16px;background:linear-gradient(160deg,rgba(196,20,42,.22),rgba(122,12,24,.06));border:1px solid rgba(230,57,70,.4)}
-.ev.hl::before{left:-16px;top:30px}
+.ev{position:relative;padding:0 0 34px}
+.ev .dot{position:absolute;left:-46px;top:0;width:36px;height:36px;border-radius:50%;background:var(--surface);border:1px solid var(--line-2);display:grid;place-items:center;color:var(--text);transform:scale(0);transition:transform .5s var(--ease)}
+.ev .dot .ic{width:16px;height:16px}
+.ev.in .dot{transform:scale(1)}
+.ev .yr{font-family:var(--serif);font-size:1.9rem;line-height:1;color:var(--red-2);letter-spacing:-.02em}
+.ev h3{margin-top:6px}
+.ev p{color:var(--muted);font-size:.95rem;margin-top:6px}
+.ev .pill{display:inline-block;margin-top:10px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:6px 10px;border:1px solid var(--line-2);border-radius:999px;color:var(--muted)}
+.ev.hl{padding:20px 20px 26px;margin-left:-12px;border-radius:16px;background:linear-gradient(160deg,rgba(230,57,70,.2),rgba(138,16,32,.05));border:1px solid rgba(230,57,70,.4)}
+.ev.hl .dot{left:-34px;top:20px;background:var(--grad);border-color:transparent;color:#fff}
 .ev.hl .pill{border-color:var(--red);color:var(--red-2)}
 
-/* plan */
-.steps{counter-reset:s;margin-top:36px;display:grid;gap:12px}
-.step{display:grid;grid-template-columns:52px 1fr;gap:14px;padding:22px 20px;border-radius:16px;background:#fff;border:1px solid var(--paper-3)}
-.step::before{counter-increment:s;content:"0" counter(s);font-family:var(--serif);font-size:2rem;line-height:1;color:var(--red);background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.02em}
-.step h3{font-size:1.2rem;margin-bottom:6px}
-.step p{color:var(--text-soft);font-size:.97rem}
-.disclaimer{margin-top:22px;font-size:.88rem;color:var(--mist)}
+/* steps */
+.steps{counter-reset:s;margin-top:30px;display:grid;gap:10px}
+.step{display:grid;grid-template-columns:48px 1fr;gap:14px;padding:20px 18px;border-radius:16px;background:var(--surface);border:1px solid var(--line)}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:var(--serif);font-size:1.9rem;line-height:1;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.step h3{font-size:1.15rem;margin-bottom:5px}
+.step p{color:var(--muted);font-size:.95rem}
+.disclaimer{margin-top:20px;font-size:.86rem;color:var(--muted-2)}
 
-/* sources */
-details{margin-top:28px;border-top:1px solid var(--ink-3)}
-summary{cursor:pointer;list-style:none;padding:20px 0;display:flex;align-items:center;justify-content:space-between;font-family:var(--serif);font-size:1.3rem}
+/* literature */
+details{margin-top:6px}
+summary{cursor:pointer;list-style:none;padding:18px 0;display:flex;align-items:center;justify-content:space-between;font-family:var(--serif);font-size:1.5rem}
 summary::-webkit-details-marker{display:none}
-summary .pm{width:28px;height:28px;border:1px solid var(--ink-3);border-radius:50%;display:grid;place-items:center;color:var(--red-2);transition:transform .4s var(--ease)}
+summary .pm{width:30px;height:30px;border:1px solid var(--line-2);border-radius:50%;display:grid;place-items:center;color:var(--red-2);transition:transform .4s var(--ease);font-family:var(--sans)}
 details[open] summary .pm{transform:rotate(45deg)}
-.src{columns:1;padding-bottom:22px}
-.src a{display:block;padding:9px 0;border-top:1px solid var(--ink-3);color:var(--mist-2);text-decoration:none;font-size:.9rem;line-height:1.4}
-.src a:hover{color:var(--paper)}
-.src a b{color:var(--paper);font-weight:500}
+.src{padding-bottom:20px}
+.src a{display:block;padding:9px 0;border-top:1px solid var(--line);color:var(--muted);text-decoration:none;font-size:.9rem;line-height:1.4}
+.src a:hover{color:var(--text)}
+.src a b{color:var(--text);font-weight:500}
 
-/* footer */
-footer{background:var(--ink);color:var(--mist-2);padding:60px 0 44px;border-top:1px solid var(--ink-3)}
-footer .sig{font-family:var(--serif);font-size:1.6rem;color:var(--paper);line-height:1.2}
-footer .how{margin-top:16px;max-width:38em;font-size:.95rem;line-height:1.55}
-footer .meta{margin-top:18px;font-size:.88rem}
-footer .meta a{color:var(--mist-2)}
+footer{padding:56px 0 44px;border-top:1px solid var(--line);color:var(--muted)}
+footer .sig{font-family:var(--serif);font-size:1.6rem;color:var(--text);line-height:1.2}
+footer .how{margin-top:14px;max-width:38em;font-size:.95rem;line-height:1.55}
+footer .meta{margin-top:18px;font-size:.86rem;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+footer .meta .ic{width:16px;height:16px;color:var(--red-2)}
 
-/* reveal */
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:calc(var(--i,0)*90ms)}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:calc(var(--i,0)*80ms)}
 .reveal.in{opacity:1;transform:none}
 
 @media (min-width:720px){
   :root{--gutter:40px}
-  section{padding:120px 0}
-  .stats{grid-template-columns:repeat(3,1fr);gap:18px}
-  .cards{grid-template-columns:repeat(2,1fr);gap:18px}
-  .split{grid-template-columns:1fr 1fr}
-  .steps{gap:14px}
-  .step{grid-template-columns:72px 1fr;padding:28px 26px}
-  .step::before{font-size:2.6rem}
+  section{padding:110px 0}
+  .ladder{grid-template-columns:repeat(2,1fr);gap:14px}
+  .duo{grid-template-columns:1fr 1fr;gap:14px}
+  .yn{grid-template-columns:1fr 1fr;gap:14px}
   .src{columns:2;column-gap:40px}
-  .hero{padding-bottom:72px}
+  .tldr .row p{font-size:1.5rem}
   .two{display:grid;grid-template-columns:5fr 7fr;gap:48px;align-items:end}
+  .chart{padding:30px 28px 22px}
+  .bar{grid-template-columns:1fr 56px}
 }
 @media (min-width:1000px){
-  .cards{grid-template-columns:repeat(3,1fr)}
-  .tl{padding-left:0;margin-left:0}
-  .tl::before,.tl .draw{left:50%}
-  .ev{width:50%;padding-right:48px}
-  .ev:nth-child(even){margin-left:50%;padding-right:0;padding-left:48px}
-  .ev::before{left:auto;right:-6px}
-  .ev:nth-child(even)::before{right:auto;left:-6px}
-  .ev.hl{margin-left:0;padding:26px 48px 30px 26px}
-  .ev.hl:nth-child(even){margin-left:50%;padding:26px 26px 30px 48px}
-  .ev.hl::before{right:-6px;top:34px}
-  .ev.hl:nth-child(even)::before{left:-6px}
+  .ladder{grid-template-columns:repeat(4,1fr)}
+  .rung{grid-template-columns:1fr;gap:14px}
+  .ladder::before{content:"";position:absolute;left:5%;right:5%;top:46px;height:1px;background:var(--line-2);z-index:0}
+  .rung{z-index:1}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}
-  .reveal{opacity:1;transform:none}
-  .hero h1 .w span{transform:none}
-  .hero .lede,.hero .cta{opacity:1}
-  .in .meter .bar i{width:var(--w)}
-  .tl .draw{height:calc(100% - 12px)}
-  .ev::before{transform:scale(1)}
+  .reveal{opacity:1;transform:none}.hero h1 .w span{transform:none}.hero .lede,.hero .cta,.dedic{opacity:1}
+  .in .bar .fill,.bar .fill{width:var(--w)}.pips i{transform:none}.tl .draw{height:calc(100% - 12px)}.ev .dot{transform:scale(1)}
 }
 </style>
 </head>
 <body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none"><symbol id="i-x-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="m15 9-6 6" /><path d="m9 9 6 6" /></symbol><symbol id="i-circle-check-big" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21.801 10A10 10 0 1 1 17 3.335" /><path d="m9 11 3 3L22 4" /></symbol><symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" /></symbol><symbol id="i-flask-conical" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2" /><path d="M6.453 15h11.094" /><path d="M8.5 2h7" /></symbol><symbol id="i-microscope" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h8" /><path d="M3 22h18" /><path d="M14 22a7 7 0 1 0 0-14h-1" /><path d="M9 14h2" /><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z" /><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3" /></symbol><symbol id="i-dna" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m10 16 1.5 1.5" /><path d="m14 8-1.5-1.5" /><path d="M15 2c-1.798 1.998-2.518 3.995-2.807 5.993" /><path d="m16.5 10.5 1 1" /><path d="m17 6-2.891-2.891" /><path d="M2 15c6.667-6 13.333 0 20-6" /><path d="m20 9 .891.891" /><path d="M3.109 14.109 4 15" /><path d="m6.5 12.5 1 1" /><path d="m7 18 2.891 2.891" /><path d="M9 22c1.798-1.998 2.518-3.995 2.807-5.993" /></symbol><symbol id="i-pill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z" /><path d="m8.5 8.5 7 7" /></symbol><symbol id="i-pill-bottle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 11h-4a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h4" /><path d="M6 7v13a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7" /><rect width="16" height="5" x="4" y="2" rx="1" /></symbol><symbol id="i-stethoscope" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2v2" /><path d="M5 2v2" /><path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1" /><path d="M8 15a6 6 0 0 0 12 0v-3" /><circle cx="20" cy="10" r="2" /></symbol><symbol id="i-leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" /><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" /></symbol><symbol id="i-heart-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" /><path d="M3.22 13H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27" /></symbol><symbol id="i-activity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" /></symbol><symbol id="i-dumbbell" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17.596 12.768a2 2 0 1 0 2.829-2.829l-1.768-1.767a2 2 0 0 0 2.828-2.829l-2.828-2.828a2 2 0 0 0-2.829 2.828l-1.767-1.768a2 2 0 1 0-2.829 2.829z" /><path d="m2.5 21.5 1.4-1.4" /><path d="m20.1 3.9 1.4-1.4" /><path d="M5.343 21.485a2 2 0 1 0 2.829-2.828l1.767 1.768a2 2 0 1 0 2.829-2.829l-6.364-6.364a2 2 0 1 0-2.829 2.829l1.768 1.767a2 2 0 0 0-2.828 2.829z" /><path d="m9.6 14.4 4.8-4.8" /></symbol><symbol id="i-brain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 18V5" /><path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4" /><path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5" /><path d="M17.997 5.125a4 4 0 0 1 2.526 5.77" /><path d="M18 18a4 4 0 0 0 2-7.464" /><path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517" /><path d="M6 18a4 4 0 0 1-2-7.464" /><path d="M6.003 5.125a4 4 0 0 0-2.526 5.77" /></symbol><symbol id="i-moon-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 5h4" /><path d="M20 3v4" /><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></symbol><symbol id="i-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /><path d="M20 2v4" /><path d="M22 4h-4" /><circle cx="4" cy="20" r="2" /></symbol><symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" /></symbol><symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></symbol><symbol id="i-hourglass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22h14" /><path d="M5 2h14" /><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22" /><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2" /></symbol><symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4" /><path d="M16 2v4" /><rect width="18" height="18" x="3" y="4" rx="2" /><path d="M3 10h18" /></symbol><symbol id="i-book-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14" /><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" /></symbol><symbol id="i-scissors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3" /><path d="M8.12 8.12 12 12" /><path d="M20 4 8.12 15.88" /><circle cx="6" cy="18" r="3" /><path d="M14.8 14.8 20 20" /></symbol><symbol id="i-bat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" stroke="none" d="M12 4.2c-.9 1.9-1.9 2.9-3.4 3.3C7.1 6.2 5 5.6 2.2 6c1.9 1.9 2.4 3.8 2 5.8 1.9-.9 3.8-.5 4.8 1 .9-.5 1.9 0 3 2.2 1.1-2.2 2.1-2.7 3-2.2 1-1.5 2.9-1.9 4.8-1-.4-2 .1-3.9 2-5.8-2.8-.4-4.9.2-6.4 1.5-1.5-.4-2.5-1.4-3.4-3.3z"/></symbol></svg>
 <div class="progress" id="progress"></div>
 <nav class="nav"><a class="mark" href="#top">R.</a><span class="chapter" id="chapter">Research brief</span></nav>
 
-<header class="hero dark" id="top">
+<header class="hero" id="top">
   <div class="grain"></div><div class="glow"></div>
   <div class="wrap">
     <div class="eyebrow" style="opacity:0;animation:fade .8s var(--ease) forwards .05s">A research brief &middot; November 2026</div>
     <h1 id="h1">Endometriosis. What <em>actually</em> works.</h1>
-    <p class="lede">I pointed a research agent I run at the clinical trials, the Cochrane reviews and the drug pipeline, then read what it found and wrote it up so you'd have one honest page instead of a hundred opinions. Everything here is ranked by the quality of the evidence behind it, not by how loudly it's marketed.</p>
+    <div class="dedic"><span class="ics"><svg class="ic" aria-hidden="true"><use href="#i-bat"/></svg><svg class="ic" aria-hidden="true"><use href="#i-moon-star"/></svg><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg></span><span>For Dracula's wife.</span></div>
+    <p class="lede">A research agent I run pulled the clinical trials, the Cochrane reviews and the drug pipeline. I read what it found, cut the weak studies, and wrote this.</p>
     <div class="cta"><span class="line"></span><span>Scroll</span></div>
   </div>
 </header>
 
-<section id="frame" data-chapter="The frame">
+<section id="short" data-chapter="The short version">
+  <div class="wrap">
+    <div class="eyebrow reveal">The short version</div>
+    <h2 class="reveal" style="--i:1">Five things, if you read nothing else.</h2>
+    <div class="tldr">
+      <div class="row reveal" style="--i:0"><div class="n"><svg class="ic" aria-hidden="true"><use href="#i-pill"/></svg></div><p>Hormones control the pain in most women. <b>Dienogest</b> or a <b>hormonal IUD</b> is the evidence-backed first move.<small>Lesions run on estrogen. Both cut the supply. Cochrane, 33 trials.</small></p></div>
+      <div class="row reveal" style="--i:1"><div class="n"><svg class="ic" aria-hidden="true"><use href="#i-pill-bottle"/></svg></div><p>If those fail, the <b>relugolix combination pill</b>. Three in four women get real relief.<small>FDA approved for endometriosis since 2022. Two Phase 3 trials, 1,261 women.</small></p></div>
+      <div class="row reveal" style="--i:2"><div class="n"><svg class="ic" aria-hidden="true"><use href="#i-activity"/></svg></div><p>Get the <b>pelvic floor</b> assessed. It becomes a second pain source that no hormone touches.<small>Physiotherapy takes about two points off a ten-point pain scale, and it holds at a year.</small></p></div>
+      <div class="row reveal" style="--i:3"><div class="n"><svg class="ic" aria-hidden="true"><use href="#i-scissors"/></svg></div><p>Surgery works when the surgeon is an <b>excision specialist</b>. Pair it with an IUD after.<small>The IUD was the only drug that cut recurrence after surgery in a 16-trial analysis.</small></p></div>
+      <div class="row reveal" style="--i:4"><div class="n"><svg class="ic" aria-hidden="true"><use href="#i-dna"/></svg></div><p>The first <b>non-hormonal drug</b> in history is in Phase 3. Results 2028. The trial is recruiting now.<small>HMI-115, a monthly antibody injection. Phase 2 cut pelvic pain in half.</small></p></div>
+    </div>
+  </div>
+</section>
+
+<section id="ladder" data-chapter="01 · The ladder">
+  <div class="wrap">
+    <div class="eyebrow reveal">01</div>
+    <h2 class="reveal" style="--i:1">The ladder</h2>
+    <p class="lede reveal" style="--i:2">Every clinic in the world climbs the same four rungs. What changes is how much evidence sits under each one.</p>
+    <div class="ladder">
+      <div class="rung reveal" style="--i:0"><div class="ico"><svg class="ic" aria-hidden="true"><use href="#i-stethoscope"/></svg></div><div><div class="k">Rung one</div><h3>Painkillers</h3><p>Where everyone starts. Guidelines recommend NSAIDs, but <b>Cochrane found a single usable trial of 24 women</b>. They take the edge off. Nobody has shown they do more.</p><div class="pips"><i class="on"></i><i></i><i></i><i></i><i></i><span>Thin</span></div></div></div>
+      <div class="rung top reveal" style="--i:1"><div class="ico"><svg class="ic" aria-hidden="true"><use href="#i-pill"/></svg></div><div><div class="k">Rung two</div><h3>Hormones</h3><p>Dienogest, the combined pill, or the hormonal IUD. <b>Dienogest: 2.6 points off a ten-point pain scale</b> across 33 trials. The pill works at about half that. The IUD is the one to have after surgery.</p><div class="pips"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><span>Strong</span></div></div></div>
+      <div class="rung top reveal" style="--i:2"><div class="ico"><svg class="ic" aria-hidden="true"><use href="#i-pill-bottle"/></svg></div><div><div class="k">Rung three</div><h3>GnRH antagonist pills</h3><p>Relugolix combination in the US, linzagolix in Europe. They switch the ovaries off and add a little estrogen back so bone is protected. <b>Three in four respond.</b> Bone loss under 1% at two years.</p><div class="pips"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><span>Strong</span></div></div></div>
+      <div class="rung reveal" style="--i:3"><div class="ico"><svg class="ic" aria-hidden="true"><use href="#i-scissors"/></svg></div><div><div class="k">Rung four</div><h3>Excision surgery</h3><p>Cochrane rates the pain evidence low quality. The fertility benefit is clear, and many women get years of relief. <b>Outcomes depend on who holds the instrument</b>: fellowship-trained excision specialist, not a general OB-GYN.</p><div class="pips"><i class="on"></i><i class="on"></i><i></i><i></i><i></i><span>Mixed</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="chart" data-chapter="02 · Versus placebo">
+  <div class="wrap">
+    <div class="eyebrow reveal">02</div>
+    <h2 class="reveal" style="--i:1">Versus placebo</h2>
+    <p class="lede reveal" style="--i:2">The only number that matters in a drug trial is the gap between the drug and the sugar pill. These are the treatments where that gap is large and the trial was blinded.</p>
+    <div class="chart reveal" style="--i:3">
+      <div class="legend"><span><i style="background:var(--grad)"></i>Treatment</span><span><i style="background:var(--line-2)"></i>Placebo</span></div>
+      <div class="crow"><div class="lab"><b>Relugolix combination</b><small>period pain responders, 6 months</small></div><div class="bars"><div class="bar drug"><div class="track"><div class="fill" style="--w:75%"></div></div><div class="v">75%</div></div><div class="bar pl"><div class="track"><div class="fill" style="--w:28%"></div></div><div class="v">28%</div></div></div></div>
+      <div class="crow"><div class="lab"><b>Linzagolix 200 mg</b><small>period pain responders, 3 months</small></div><div class="bars"><div class="bar drug"><div class="track"><div class="fill" style="--w:73%"></div></div><div class="v">73%</div></div><div class="bar pl"><div class="track"><div class="fill" style="--w:24%"></div></div><div class="v">24%</div></div></div></div>
+      <div class="crow"><div class="lab"><b>Relugolix combination</b><small>non-period pelvic pain responders</small></div><div class="bars"><div class="bar drug"><div class="track"><div class="fill" style="--w:62%"></div></div><div class="v">62%</div></div><div class="bar pl"><div class="track"><div class="fill" style="--w:42%"></div></div><div class="v">42%</div></div></div></div>
+      <div class="crow"><div class="lab"><b>Pelvic floor Botox</b><small>reported benefit at 1 month</small></div><div class="bars"><div class="bar drug"><div class="track"><div class="fill" style="--w:73%"></div></div><div class="v">73%</div></div><div class="bar pl"><div class="track"><div class="fill" style="--w:29%"></div></div><div class="v">29%</div></div></div></div>
+      <div class="cap">Relugolix: SPIRIT 1 and 2, Lancet 2022, 1,261 women, placebo figures averaged across the two trials. Linzagolix: EDELWEISS 3, 2024. Botox: NIH Phase 2, 29 women, double-masked.</div>
+    </div>
+  </div>
+</section>
+
+<section id="floor" data-chapter="03 · The pelvic floor">
   <div class="wrap">
     <div class="two">
-      <div>
-        <div class="eyebrow reveal">The honest frame</div>
-        <h2 class="reveal" style="--i:1">There is no cure. The pain is still treatable.</h2>
-      </div>
-      <p class="lede reveal" style="--i:2">Endometriosis is tissue like the lining of the uterus growing where it shouldn't, feeding on estrogen and inflaming everything around it. Nobody has a drug that removes it. What exists is a set of tools that control the pain well in most women, and a pipeline that is finally producing something new.</p>
+      <div><div class="eyebrow reveal">03</div><h2 class="reveal" style="--i:1">The part most doctors skip</h2></div>
+      <p class="lede reveal" style="--i:2">Years of pelvic pain teach the pelvic floor muscles to clench. The spasm becomes its own pain source, and no hormone touches it. One assessment visit tells you whether this is part of your pain.</p>
     </div>
-    <div class="stats">
-      <div class="stat reveal" style="--i:0"><div class="n"><span data-count="190">0</span><small>million</small></div><div class="l">women living with it worldwide</div></div>
-      <div class="stat reveal" style="--i:1"><div class="n">1 <small>in</small> <span data-count="10">0</span></div><div class="l">women of reproductive age are affected</div></div>
-      <div class="stat reveal" style="--i:2"><div class="n"><span data-count="40">0</span><small>years</small></div><div class="l">of nothing but hormone-based drugs. That ends with the trials in chapter four.</div></div>
+    <div class="duo">
+      <div class="panel reveal" style="--i:0"><div class="hd"><svg class="ic" aria-hidden="true"><use href="#i-activity"/></svg><h3>Pelvic floor physiotherapy</h3></div><div class="big">2.0<small>points off a ten-point scale</small></div><p>Seven studies pooled in 2026. Hands-on local work and electrotherapy beat general exercise. A 2025 trial checked again a year later and the gain was still there.</p></div>
+      <div class="panel reveal" style="--i:1"><div class="hd"><svg class="ic" aria-hidden="true"><use href="#i-heart-pulse"/></svg><h3>Botox, for confirmed spasm</h3></div><div class="big">5 to 11<small>months of relief per injection</small></div><p>100 units into the spasming muscles, done at specialist pain clinics. Most women in the NIH trial cut their pain medication. Small trial, properly blinded.</p></div>
     </div>
-    <div class="frame-note reveal" style="--i:3">How to read this: each treatment carries an evidence bar. <b>Full bar</b> means multiple large randomized trials or a Cochrane review. <b>Half bar</b> means real trials, but small or few. <b>Short bar</b> means a signal, not proof.</div>
+    <p class="note reveal">Acupuncture and exercise both show pain reductions across small trials. Low risk, thin evidence, reasonable to try.</p>
   </div>
 </section>
 
-<section id="now" data-chapter="01 · What works now">
+<section id="supps" data-chapter="04 · Supplements">
   <div class="wrap">
-    <div class="eyebrow reveal">Chapter 01</div>
-    <h2 class="reveal" style="--i:1">What works right now</h2>
-    <p class="lede reveal" style="--i:2">Endo lesions run on estrogen. Every first-line drug works by turning that supply down. None of them cure it, but they control pain in most women, and they are the foundation everything else stacks on.</p>
-
-    <div class="cards">
-      <div class="card reveal" style="--i:0"><span class="num">1 / 6</span>
-        <span class="tag">First choice if not trying to conceive</span>
-        <h3>Dienogest</h3>
-        <div class="big">2.6<small>points less pain, 0 to 10 scale</small></div>
-        <p>A progestin pill, taken daily. The best-studied single drug there is. The 2025 Cochrane review pooled 33 trials and 5,059 women and found this size of drop against placebo. Cheap, no estrogen, no bone loss.</p>
-        <div class="meter strong"><span>Strong</span><div class="bar"><i style="--w:96%"></i></div></div>
+    <div class="eyebrow reveal">04</div>
+    <h2 class="reveal" style="--i:1">Supplements</h2>
+    <p class="lede reveal" style="--i:2">A huge market, almost no regulation. This is what the placebo-controlled trials show. One strict 2026 review that filtered for trial integrity found nothing beats placebo, so read the left column as cheap and plausible, not proven.</p>
+    <div class="yn">
+      <div class="col reveal" style="--i:0"><h3><svg class="ic" aria-hidden="true"><use href="#i-circle-check-big"/></svg>Has a signal</h3>
+        <div class="li"><svg class="ic" aria-hidden="true"><use href="#i-circle-check-big"/></svg><div><b>Vitamin C 1,000 mg and vitamin E 800 IU, daily</b><span>Top performer for period pain in the 2025 network analysis. Eight weeks is the tested window.</span></div></div>
+        <div class="li"><svg class="ic" aria-hidden="true"><use href="#i-circle-check-big"/></svg><div><b>Curcumin, alongside dienogest</b><span>One clean double-blind trial in 2025: less pain of every type after eight weeks.</span></div></div>
+        <div class="li"><svg class="ic" aria-hidden="true"><use href="#i-circle-check-big"/></svg><div><b>Melatonin, 3 to 5 mg at night</b><span>Better sleep and less period pain in two trials when added to dienogest. High doses caused dizziness.</span></div></div>
       </div>
-      <div class="card reveal" style="--i:1"><span class="num">2 / 6</span>
-        <span class="tag">Fine if it's already working</span>
-        <h3>The combined pill</h3>
-        <div class="big">½<small>the effect of dienogest</small></div>
-        <p>Works, but roughly half the pain reduction in a 2025 network analysis of 31 trials. Head to head against progestins in seven trials the two came out equal, so if you're on one and it's working, there's no reason to switch.</p>
-        <div class="meter strong"><span>Strong</span><div class="bar"><i style="--w:84%"></i></div></div>
-      </div>
-      <div class="card reveal" style="--i:2"><span class="num">3 / 6</span>
-        <span class="tag">Best thing to pair with surgery</span>
-        <h3>Hormonal IUD</h3>
-        <div class="big">8×<small>lower odds of recurrence after surgery</small></div>
-        <p>In a 2026 analysis of 16 trials of ten different drugs after surgery, the hormonal IUD was the only one that cut recurrence, and it gave the largest pain drop. Placed once, works for years, nothing to remember.</p>
-        <div class="meter strong"><span>Strong</span><div class="bar"><i style="--w:88%"></i></div></div>
-      </div>
-      <div class="card reveal" style="--i:3"><span class="num">4 / 6</span>
-        <span class="tag">When the basics fail</span>
-        <h3>Relugolix combination</h3>
-        <div class="big">75%<small>vs 27 to 30% on placebo</small></div>
-        <p>Sold as Myfembree. One pill that switches the ovaries off and adds a little estrogen back so your bones don't pay for it. Two Phase 3 trials, 1,261 women: three in four got meaningful period pain relief. Bone loss under 1% at two years. FDA approved for endo in 2022.</p>
-        <div class="meter strong"><span>Strong</span><div class="bar"><i style="--w:94%"></i></div></div>
-      </div>
-      <div class="card reveal" style="--i:4"><span class="num">5 / 6</span>
-        <span class="tag">Europe only, for now</span>
-        <h3>Linzagolix</h3>
-        <div class="big">73%<small>vs 24% on placebo</small></div>
-        <p>Same class as relugolix, sold as Yselty. Approved in Europe in December 2024 off a Phase 3 trial where the 200 mg dose with add-back therapy hit those numbers. A lower 75 mg dose worked without add-back. Not in the US yet.</p>
-        <div class="meter strong"><span>Strong</span><div class="bar"><i style="--w:86%"></i></div></div>
-      </div>
-      <div class="card reveal" style="--i:5"><span class="num">6 / 6</span>
-        <span class="tag">The surgeon matters more than the surgery</span>
-        <h3>Excision surgery</h3>
-        <div class="big">40%<small>pain improvement at 3 years, with hormones after</small></div>
-        <p>The honest answer: the Cochrane review rated the pain evidence low quality. Surgery clearly helps fertility, and many women get years of relief, but outcomes depend on who does it. Fellowship-trained excision specialist, not a general OB-GYN, and a hormonal IUD afterward.</p>
-        <div class="meter mod"><span>Mixed</span><div class="bar"><i style="--w:55%"></i></div></div>
-      </div>
-    </div>
-
-    <div class="aside reveal">
-      <p><b>What happens after surgery.</b> A UK trial followed 405 women for three years after conservative surgery. Half took the pill, half a long-acting progestin like the IUD. <b>Both groups got about 40% pain improvement.</b> The long-acting group needed fewer repeat procedures. Translation: the surgery buys time, the hormone keeps it.</p>
-    </div>
-  </div>
-</section>
-
-<section id="floor" data-chapter="02 · The part most doctors skip">
-  <div class="wrap">
-    <div class="eyebrow reveal">Chapter 02</div>
-    <h2 class="reveal" style="--i:1">The part most doctors skip</h2>
-    <p class="lede reveal" style="--i:2">Years of pelvic pain teach the pelvic floor muscles to clench. That spasm becomes its own pain source, and no hormone touches it. It is the most under-treated piece of the whole disease, and the piece with the fastest payoff.</p>
-
-    <div class="cards">
-      <div class="card reveal" style="--i:0"><span class="num">1 / 4</span>
-        <span class="tag">One assessment visit tells you</span>
-        <h3>Pelvic floor physiotherapy</h3>
-        <div class="big">2.0<small>points less pain, held at 12 months</small></div>
-        <p>A 2026 meta-analysis of seven studies. Hands-on local techniques and electrotherapy beat general exercise. A separate 2025 trial checked again a year later and the gain was still there.</p>
-        <div class="meter mod"><span>Moderate</span><div class="bar"><i style="--w:66%"></i></div></div>
-      </div>
-      <div class="card reveal" style="--i:1"><span class="num">2 / 4</span>
-        <span class="tag">For confirmed spasm</span>
-        <h3>Pelvic floor Botox</h3>
-        <div class="big">73%<small>reported benefit vs 29% on saline</small></div>
-        <p>The NIH ran a double-blind trial: 100 units injected into the spasming muscles. Relief lasted five to eleven months and most women cut their pain medication. Only 29 women, but properly blinded, which almost nothing else in this space is.</p>
-        <div class="meter mod"><span>Moderate</span><div class="bar"><i style="--w:52%"></i></div></div>
-      </div>
-      <div class="card reveal" style="--i:2"><span class="num">3 / 4</span>
-        <span class="tag">Worth a real six-week run</span>
-        <h3>Acupuncture</h3>
-        <div class="big">14<small>trials, 793 women</small></div>
-        <p>A meaningful drop in pain across the pooled trials, with electro and ear acupuncture doing best. Trial quality is mixed and most come out of China. Low risk, low cost, so the bar for trying it is low.</p>
-        <div class="meter low"><span>Low to moderate</span><div class="bar"><i style="--w:38%"></i></div></div>
-      </div>
-      <div class="card reveal" style="--i:3"><span class="num">4 / 4</span>
-        <span class="tag">Zero downside</span>
-        <h3>Exercise</h3>
-        <div class="big">6<small>small trials</small></div>
-        <p>Better quality of life, better mood, less pain. The evidence is thin because the trials are tiny, not because they came out negative.</p>
-        <div class="meter low"><span>Low</span><div class="bar"><i style="--w:28%"></i></div></div>
+      <div class="col no reveal" style="--i:1"><h3><svg class="ic" aria-hidden="true"><use href="#i-x-circle"/></svg>No signal</h3>
+        <div class="li"><svg class="ic" aria-hidden="true"><use href="#i-x-circle"/></svg><div><b>Vitamin D</b><span>Two placebo trials. Nothing on pain.</span></div></div>
+        <div class="li"><svg class="ic" aria-hidden="true"><use href="#i-x-circle"/></svg><div><b>CBD</b><span>A 102-woman trial found no benefit over placebo.</span></div></div>
+        <div class="li"><svg class="ic" aria-hidden="true"><use href="#i-x-circle"/></svg><div><b>Low-dose naltrexone</b><span>The only registered trial was terminated.</span></div></div>
+        <div class="li"><svg class="ic" aria-hidden="true"><use href="#i-x-circle"/></svg><div><b>Pentoxifylline</b><span>Cochrane reviewed five trials. No effect.</span></div></div>
+        <div class="li"><svg class="ic" aria-hidden="true"><use href="#i-x-circle"/></svg><div><b>N-acetylcysteine</b><span>One 2013 observational study, still no trial.</span></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="supps" data-chapter="03 · Supplements, honestly" style="background:var(--paper-2)">
+<section id="next" data-chapter="05 · What's coming">
   <div class="wrap">
-    <div class="eyebrow reveal">Chapter 03</div>
-    <h2 class="reveal" style="--i:1">Supplements, honestly</h2>
-    <p class="lede reveal" style="--i:2">The supplement market for endo is enormous and nearly unregulated. This is what the placebo-controlled trials actually show, including the one strict review that found none of it beats placebo once you filter for trial integrity.</p>
-
-    <div class="split">
-      <div class="col reveal" style="--i:0">
-        <h3><span class="dot"></span>Has a signal</h3>
-        <div class="item"><b>Vitamin C 1,000 mg + Vitamin E 800 IU, daily</b><span>Came out as a top performer for period pain in the 2025 network analysis. Five pooled trials: far higher odds of reduced pelvic pain. Eight weeks is the tested window. Cheap, safe, plausible. Not proven.</span></div>
-        <div class="item"><b>Curcumin, on top of dienogest</b><span>One 2025 double-blind trial: less pain of every type after eight weeks, better quality of life. A single trial, but a clean one.</span></div>
-        <div class="item"><b>Melatonin, low dose at night</b><span>Better sleep and less period pain in two recent trials when added to dienogest. A Swedish trial of 20 mg alone found nothing, and high doses made half the women dizzy. Keep it to 3 to 5 mg.</span></div>
-      </div>
-      <div class="col no reveal" style="--i:1">
-        <h3><span class="dot"></span>No signal</h3>
-        <div class="item"><b>Vitamin D</b><span>Two placebo trials. Nothing on pain.</span></div>
-        <div class="item"><b>CBD</b><span>A 102-woman trial in Brazil found no benefit over placebo and more side effects.</span></div>
-        <div class="item"><b>Low-dose naltrexone</b><span>Popular online. The only registered trial was terminated. No data.</span></div>
-        <div class="item"><b>Pentoxifylline</b><span>Cochrane reviewed five trials. No effect on pain.</span></div>
-        <div class="item"><b>N-acetylcysteine</b><span>One promising observational study from 2013 that keeps getting recycled. Still no proper trial.</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="next" class="dark" data-chapter="04 · What's coming">
-  <div class="wrap">
-    <div class="eyebrow reveal">Chapter 04</div>
+    <div class="eyebrow reveal">05</div>
     <h2 class="reveal" style="--i:1">What's coming</h2>
-    <p class="lede reveal" style="--i:2">For forty years every endometriosis drug has been a hormone. That is finally changing. These are the trials that matter, in the order their results land.</p>
-
+    <p class="lede reveal" style="--i:2">For forty years every endometriosis drug has been a hormone. That is changing. These are the trials that matter, in the order their results land.</p>
     <div class="tl" id="tl"><div class="draw"></div>
-      <div class="ev reveal"><div class="yr">2026</div><h3>Esketamine</h3><p>Phase 3, Netherlands. Goes after the nervous system's pain amplification rather than the lesions. The first serious test of that idea in endo.</p><span class="pill">Phase 3 · recruiting</span></div>
-      <div class="ev reveal"><div class="yr">2027</div><h3>Vipoglanstat</h3><p>Phase 2, Sweden. Blocks the specific prostaglandin that drives the pain, without the stomach and kidney damage of NSAIDs. Fully enrolled, results mid 2027.</p><span class="pill">Phase 2 · enrolled</span></div>
-      <div class="ev reveal"><div class="yr">2027</div><h3>Metformin</h3><p>Phase 2, Boston Children's Hospital. A diabetes drug tested as an add-on, on the theory that blood sugar regulation calms the inflammation.</p><span class="pill">Phase 2 · running</span></div>
-      <div class="ev hl reveal"><div class="yr">2028</div><h3>HMI-115. The one to watch.</h3><p>An antibody that blocks the prolactin receptor. Non-hormonal, one injection a month, no bone loss, no hot flashes, fertility untouched in principle. Phase 2 cut period pain 42% and non-period pelvic pain 50%, published in The Lancet's women's health journal this month. FDA Fast Track and Breakthrough status. The first non-hormonal endo drug in history to reach Phase 3. Recruiting now.</p><span class="pill">Phase 3 · recruiting · NCT07318688</span></div>
-      <div class="ev reveal"><div class="yr">2030</div><h3>Dichloroacetate</h3><p>Edinburgh. A repurposed cancer drug that starves lesions of lactate. A 100-woman randomized trial just finished; the definitive UK trial reports around 2030.</p><span class="pill">Feasibility done</span></div>
+      <div class="ev reveal"><div class="dot"><svg class="ic" aria-hidden="true"><use href="#i-brain"/></svg></div><div class="yr">2026</div><h3>Esketamine</h3><p>Phase 3, Netherlands. Targets the nervous system's pain amplification rather than the lesions.</p><span class="pill">Phase 3 · recruiting</span></div>
+      <div class="ev reveal"><div class="dot"><svg class="ic" aria-hidden="true"><use href="#i-flask-conical"/></svg></div><div class="yr">2027</div><h3>Vipoglanstat</h3><p>Phase 2, Sweden. Blocks the specific prostaglandin behind the pain without the stomach and kidney cost of NSAIDs. Fully enrolled.</p><span class="pill">Phase 2 · enrolled</span></div>
+      <div class="ev reveal"><div class="dot"><svg class="ic" aria-hidden="true"><use href="#i-pill"/></svg></div><div class="yr">2027</div><h3>Metformin</h3><p>Phase 2, Boston Children's Hospital. A diabetes drug as an add-on, on the theory that blood sugar regulation calms the inflammation.</p><span class="pill">Phase 2 · running</span></div>
+      <div class="ev hl reveal"><div class="dot"><svg class="ic" aria-hidden="true"><use href="#i-dna"/></svg></div><div class="yr">2028</div><h3>HMI-115</h3><p>An antibody that blocks the prolactin receptor. Non-hormonal, one injection a month, no bone loss, no hot flashes. Phase 2 cut period pain 42% and non-period pelvic pain 50%, published in The Lancet's women's health journal this month. FDA Fast Track and Breakthrough status. The first non-hormonal endometriosis drug to reach Phase 3.</p><span class="pill">Phase 3 · recruiting · NCT07318688</span></div>
+      <div class="ev reveal"><div class="dot"><svg class="ic" aria-hidden="true"><use href="#i-microscope"/></svg></div><div class="yr">2030</div><h3>Dichloroacetate</h3><p>Edinburgh. A repurposed cancer drug that starves lesions of lactate. A 100-woman randomized trial just finished; the definitive UK trial reports around 2030.</p><span class="pill">Feasibility done</span></div>
     </div>
   </div>
 </section>
 
-<section id="plan" data-chapter="05 · If it were me">
+<section id="plan" data-chapter="06 · If it were me">
   <div class="wrap">
-    <div class="eyebrow reveal">Chapter 05</div>
+    <div class="eyebrow reveal">06</div>
     <h2 class="reveal" style="--i:1">If it were me</h2>
-    <p class="lede reveal" style="--i:2">The order I'd attack it in, based on everything above.</p>
-
+    <p class="lede reveal" style="--i:2">The order I'd take it in.</p>
     <div class="steps">
-      <div class="step reveal" style="--i:0"><div><h3>Audit the current plan</h3><p>If it's just painkillers or a basic pill, dienogest or a hormonal IUD is the evidence-backed next step. If hormones have already failed, relugolix combination is approved, covered, and has the strongest trial data of anything on the market.</p></div></div>
-      <div class="step reveal" style="--i:1"><div><h3>Get the pelvic floor assessed</h3><p>One visit with a pelvic floor physiotherapist. If there's spasm, that is a second pain source with its own fix, and it's the fastest win on this page.</p></div></div>
-      <div class="step reveal" style="--i:2"><div><h3>Pick the surgeon, not the surgery</h3><p>If it's never been excised, or only ablated, find a fellowship-trained excision specialist. Pair it with a hormonal IUD afterward so the result lasts.</p></div></div>
-      <div class="step reveal" style="--i:3"><div><h3>Run the cheap stack for eight weeks</h3><p>Vitamin C 1,000 mg and vitamin E 800 IU daily. Curcumin if already on dienogest. Melatonin 3 to 5 mg at night if sleep is bad. Keep a pain log and judge by the numbers, not the feeling.</p></div></div>
-      <div class="step reveal" style="--i:4"><div><h3>Get on the HMI-115 list</h3><p>Phase 3 is recruiting now under NCT07318688. Enrolling means a real shot at the drug roughly two years before anyone can buy it.</p></div></div>
+      <div class="step reveal" style="--i:0"><div><h3>Audit the current plan</h3><p>Painkillers or a basic pill only: dienogest or a hormonal IUD is the next step. Hormones already failed: relugolix combination, which has the strongest trial data on the market.</p></div></div>
+      <div class="step reveal" style="--i:1"><div><h3>Get the pelvic floor assessed</h3><p>One visit with a pelvic floor physiotherapist. If there's spasm, that's a second pain source with its own fix.</p></div></div>
+      <div class="step reveal" style="--i:2"><div><h3>Choose the surgeon, not the surgery</h3><p>Never excised, or only ablated: find a fellowship-trained excision specialist. Hormonal IUD afterward so it lasts.</p></div></div>
+      <div class="step reveal" style="--i:3"><div><h3>Run the cheap stack for eight weeks</h3><p>Vitamin C 1,000 mg and vitamin E 800 IU daily. Curcumin if on dienogest. Melatonin 3 to 5 mg at night if sleep is bad. Keep a pain log and judge by the numbers.</p></div></div>
+      <div class="step reveal" style="--i:4"><div><h3>Get on the HMI-115 list</h3><p>Phase 3 is recruiting under NCT07318688. Enrolling means a real shot at the drug two years before it can be bought.</p></div></div>
     </div>
-    <p class="disclaimer reveal">This is research, not medical advice. Every item here is something to bring to a specialist, not a replacement for one.</p>
+    <p class="disclaimer reveal">Research, not medical advice. Everything here is something to bring to a specialist.</p>
   </div>
 </section>
 
-<section class="dark" id="sources" data-chapter="Sources" style="padding-top:60px;padding-bottom:40px">
+<section id="sources" data-chapter="The literature" style="padding-top:50px;padding-bottom:30px">
   <div class="wrap">
     <details>
-      <summary><span>Sources, if you want to check my work</span><span class="pm">+</span></summary>
+      <summary><span>The literature</span><span class="pm">+</span></summary>
       <div class="src">
         <a href="https://pubmed.ncbi.nlm.nih.gov/41065045/"><b>Cochrane 2025</b> · Progestagens for endometriosis pain, 33 RCTs</a>
         <a href="https://pubmed.ncbi.nlm.nih.gov/40373315/"><b>Obstet Gynecol 2025</b> · Network meta-analysis of drug treatments, 31 RCTs</a>
         <a href="https://pubmed.ncbi.nlm.nih.gov/39862640/"><b>EJOG 2025</b> · Progestogens vs combined pill, 7 trials</a>
         <a href="https://pubmed.ncbi.nlm.nih.gov/41017486/"><b>BJOG 2026</b> · Post-surgery drug network meta-analysis, 16 RCTs</a>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/28114727/"><b>Cochrane 2017</b> · NSAIDs for endometriosis pain</a>
         <a href="https://pubmed.ncbi.nlm.nih.gov/35717987/"><b>Lancet 2022</b> · Relugolix SPIRIT 1 and 2 Phase 3 trials</a>
         <a href="https://pubmed.ncbi.nlm.nih.gov/38243752/"><b>Hum Reprod 2024</b> · Relugolix two-year extension</a>
         <a href="https://pubmed.ncbi.nlm.nih.gov/38648863/"><b>Hum Reprod 2024</b> · Linzagolix EDELWEISS 3 Phase 3</a>
@@ -438,38 +381,21 @@ footer .meta a{color:var(--mist-2)}
   <div class="wrap">
     <div class="sig">Researched and written by Raggy.</div>
     <p class="how">The sources were pulled by a research agent I run against PubMed, the Cochrane Library and ClinicalTrials.gov. I read what it surfaced, cut the weak trials, and wrote this.</p>
-    <div class="meta">November 2026 &middot; Built for one reader &middot; <a href="#top">Back to top</a></div>
+    <div class="meta"><svg class="ic" aria-hidden="true"><use href="#i-bat"/></svg><span>For Dracula's wife &middot; November 2026 &middot; <a href="#top">Back to top</a></span></div>
   </div>
 </footer>
 
 <script>
 (function(){
-  // hero word reveal
-  var h1=document.getElementById('h1');
-  var html=h1.innerHTML, i=0;
-  h1.innerHTML=html.split(/(<em>.*?<\/em>|\s+)/).filter(Boolean).map(function(t){
+  var h1=document.getElementById('h1'), i=0;
+  h1.innerHTML=h1.innerHTML.split(/(<em>.*?<\/em>|\s+)/).filter(Boolean).map(function(t){
     if(/^\s+$/.test(t)) return ' ';
     return '<span class="w"><span style="--i:'+(i++)+'">'+t+'</span></span>';
   }).join('');
-
-  // reveal on scroll
   var io=new IntersectionObserver(function(es){
     es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
-  },{threshold:.18,rootMargin:'0px 0px -6% 0px'});
-  document.querySelectorAll('.reveal,.stat,.tl').forEach(function(el){ io.observe(el); });
-
-  // counters
-  var co=new IntersectionObserver(function(es){
-    es.forEach(function(e){
-      if(!e.isIntersecting) return; co.unobserve(e.target);
-      var el=e.target, end=+el.dataset.count, t0=null;
-      function step(ts){ if(!t0) t0=ts; var p=Math.min((ts-t0)/1400,1); p=1-Math.pow(1-p,3); el.textContent=Math.round(end*p); if(p<1) requestAnimationFrame(step); }
-      requestAnimationFrame(step);
-    });
-  },{threshold:.5});
-  document.querySelectorAll('[data-count]').forEach(function(el){ co.observe(el); });
-
-  // progress + chapter label
+  },{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+  document.querySelectorAll('.reveal,.tl').forEach(function(el){ io.observe(el); });
   var bar=document.getElementById('progress'), label=document.getElementById('chapter');
   var secs=[].slice.call(document.querySelectorAll('[data-chapter]'));
   function onScroll(){
