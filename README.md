@@ -11,6 +11,7 @@ Raggy's personal domain. A static site on GitHub Pages: one page per purpose, ea
 | Path | For | Built |
 |---|---|---|
 | `/` | Endometriosis research brief, for Dracula's wife | 2026-11-02 |
+| `/stl-ava/` | St. Louis stay options with photo slideshows, for Ava | 2026-11-06 |
 
 ## Layout
 

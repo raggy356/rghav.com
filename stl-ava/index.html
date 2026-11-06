@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>St. Louis, Nov 14 to 16</title>
+<meta name="description" content="Six places. Swipe the photos, pick one.">
+<meta property="og:title" content="St. Louis, Nov 14 to 16">
+<meta property="og:description" content="Six places. Swipe the photos, pick one.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rghav.com/stl-ava/">
+<meta property="og:image" content="https://rghav.com/stl-ava/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0B0C10">
+<meta name="build" content="20261106T162421Z">
+<meta http-equiv="Cache-Control" content="no-cache">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B0C10'/%3E%3Ccircle cx='32' cy='32' r='11' fill='%23E63946'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0B0C10; --bg-2:#101218; --surface:#14161C; --surface-2:#1A1D25; --line:#262A34; --line-2:#333845;
+  --text:#F2F0EB; --muted:#9AA0AB; --muted-2:#6E7480;
+  --red:#E63946; --red-2:#FF5A66; --red-deep:#8A1020;
+  --grad:linear-gradient(90deg,#8A1020,#E63946 60%,#FF5A66);
+  --serif:'Fraunces',Georgia,serif; --sans:'Inter',system-ui,-apple-system,sans-serif;
+  --gutter:20px; --max:1040px; --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);font-size:17px;line-height:1.6;color:var(--text);background:var(--bg);overflow-x:hidden}
+svg{display:block}
+a{color:inherit}
+::selection{background:var(--red);color:#fff}
+.ic{width:22px;height:22px;flex:none}
+
+.progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--grad);z-index:100}
+.nav{position:fixed;top:0;left:0;right:0;z-index:90;display:flex;align-items:center;justify-content:space-between;padding:16px var(--gutter);color:var(--text);pointer-events:none;background:linear-gradient(var(--bg),rgba(11,12,16,0))}
+.nav .mark{font-family:var(--serif);font-weight:600;font-size:18px;text-decoration:none;pointer-events:auto}
+.nav .chapter{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+section{position:relative;padding:84px 0;border-top:1px solid var(--line)}
+.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--red-2);font-weight:600;display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.eyebrow::before{content:"";width:26px;height:1px;background:currentColor}
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;line-height:1.04;font-variation-settings:"opsz" 144}
+h1{font-size:clamp(2.7rem,11.5vw,6.6rem);line-height:.98}
+h2{font-size:clamp(2rem,8vw,3.8rem);margin-bottom:18px}
+h3{font-size:1.3rem;line-height:1.15}
+.lede{font-size:1.08rem;line-height:1.55;color:var(--muted);max-width:36em}
+.lede b{color:var(--text);font-weight:500}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:96px 0 48px;overflow:hidden}
+.hero .glow{position:absolute;inset:auto -30% -45% -30%;height:75vh;background:radial-gradient(ellipse at 50% 100%,rgba(230,57,70,.40),rgba(138,16,32,.16) 36%,rgba(230,57,70,0) 64%);pointer-events:none;animation:breathe 8s ease-in-out infinite}
+@keyframes breathe{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-4%) scale(1.06)}}
+.hero .grain{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.07'/%3E%3C/svg%3E");pointer-events:none;mix-blend-mode:overlay}
+.hero h1 .w{display:inline-block;overflow:hidden;vertical-align:bottom}
+.hero h1 .w span{display:inline-block;transform:translateY(110%);animation:rise 1s var(--ease) forwards;animation-delay:calc(var(--i)*.09s + .15s)}
+@keyframes rise{to{transform:translateY(0)}}
+.hero h1 em{font-style:italic;color:var(--red-2);font-variation-settings:"opsz" 144,"wght" 300}
+.herocat{margin-top:30px;width:min(78vw,380px);border-radius:14px;overflow:hidden;border:1px solid var(--line-2);transform:rotate(-2deg);box-shadow:0 24px 50px -24px rgba(230,57,70,.45);opacity:0;animation:fade 1s var(--ease) forwards .7s}
+.herocat img{display:block;width:100%;height:auto}
+.dedic{margin-top:22px;display:flex;align-items:center;gap:12px;font-family:var(--serif);font-size:1.25rem;color:var(--text);opacity:0;animation:fade 1s var(--ease) forwards .8s}
+.dedic .ics{display:flex;gap:8px;color:var(--red-2)}
+.dedic .ics .ic{width:18px;height:18px}
+.dedic .ics .ic:nth-child(1){animation:flap 2.6s ease-in-out infinite}
+@keyframes flap{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-3px) rotate(-6deg)}}
+.hero .lede{margin-top:18px;opacity:0;animation:fade 1s var(--ease) forwards 1s}
+.hero .cta{margin-top:40px;display:flex;align-items:center;gap:14px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);opacity:0;animation:fade 1s var(--ease) forwards 1.25s}
+.hero .cta .line{width:1px;height:44px;background:linear-gradient(var(--red-2),transparent);animation:drop 1.8s ease-in-out infinite}
+@keyframes drop{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+@keyframes fade{to{opacity:1}}
+
+/* short version */
+.tldr{display:grid;gap:0;margin-top:30px;border-top:1px solid var(--line)}
+.tldr .row{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:22px 0;border-bottom:1px solid var(--line);align-items:start}
+.tldr .row .n{width:44px;height:44px;border-radius:12px;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;color:var(--red-2)}
+.tldr .row p{font-family:var(--serif);font-size:1.28rem;line-height:1.3;letter-spacing:-.01em}
+.tldr .row p b{font-weight:600;color:var(--red-2)}
+.tldr .row small{display:block;margin-top:6px;font-family:var(--sans);font-size:.92rem;color:var(--muted);line-height:1.5}
+
+/* ladder */
+.ladder{position:relative;margin-top:36px;display:grid;gap:12px}
+.rung{position:relative;display:grid;grid-template-columns:52px 1fr;gap:16px;padding:22px 20px;border-radius:16px;background:var(--surface);border:1px solid var(--line)}
+.rung .ico{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:var(--surface-2);border:1px solid var(--line-2);color:var(--text)}
+.rung .ico .ic{width:24px;height:24px}
+.rung .k{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:6px}
+.rung p{color:var(--muted);font-size:.96rem;margin-top:6px}
+.rung p b{color:var(--text);font-weight:500}
+.pips{display:flex;align-items:center;gap:6px;margin-top:14px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.pips i{width:18px;height:5px;border-radius:3px;background:var(--line-2);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.pips i.on{background:var(--grad)}
+.in .pips i{transform:scaleX(1)}
+.in .pips i:nth-child(1){transition-delay:.1s}.in .pips i:nth-child(2){transition-delay:.2s}.in .pips i:nth-child(3){transition-delay:.3s}.in .pips i:nth-child(4){transition-delay:.4s}.in .pips i:nth-child(5){transition-delay:.5s}
+.pips span{margin-left:8px}
+.rung.top{background:linear-gradient(160deg,rgba(230,57,70,.16),rgba(138,16,32,.05)),var(--surface);border-color:rgba(230,57,70,.4)}
+.rung.top .ico{background:var(--grad);border-color:transparent;color:#fff}
+
+/* chart */
+.chart{margin-top:34px;padding:26px 20px 18px;border-radius:16px;background:var(--surface);border:1px solid var(--line)}
+.chart .legend{display:flex;gap:18px;font-size:12px;color:var(--muted);margin-bottom:22px;letter-spacing:.04em}
+.chart .legend i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:7px}
+.crow{padding:14px 0;border-top:1px solid var(--line)}
+.crow:first-of-type{border-top:0;padding-top:0}
+.crow .lab{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px}
+.crow .lab b{font-weight:500}
+.crow .lab small{color:var(--muted);font-size:.85rem}
+.bars{display:grid;gap:6px}
+.bar{display:grid;grid-template-columns:1fr 46px;align-items:center;gap:10px}
+.bar .track{height:14px;border-radius:7px;background:var(--bg-2);overflow:hidden}
+.bar .fill{height:100%;width:0;border-radius:7px;transition:width 1.3s var(--ease)}
+.bar.drug .fill{background:var(--grad)}
+.bar.pl .fill{background:var(--line-2)}
+.bar .v{font-family:var(--serif);font-size:1.15rem;text-align:right;line-height:1}
+.bar.pl .v{color:var(--muted)}
+.in .bar .fill{width:var(--w)}
+.chart .cap{margin-top:18px;font-size:.85rem;color:var(--muted);line-height:1.5}
+
+/* two-up */
+.duo{display:grid;gap:12px;margin-top:30px}
+.panel{padding:22px 20px;border-radius:16px;background:var(--surface);border:1px solid var(--line)}
+.panel .hd{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.panel .hd .ic{color:var(--red-2);width:24px;height:24px}
+.panel .big{font-family:var(--serif);font-size:2.2rem;line-height:1;letter-spacing:-.02em;margin:8px 0 4px}
+.panel .big small{font-family:var(--sans);font-size:.42em;color:var(--muted);letter-spacing:0;margin-left:6px}
+.panel p{color:var(--muted);font-size:.96rem}
+.note{margin-top:14px;font-size:.92rem;color:var(--muted)}
+
+/* yes / no */
+.yn{display:grid;gap:12px;margin-top:30px}
+.yn .col{padding:22px 20px;border-radius:16px;background:var(--surface);border:1px solid var(--line)}
+.yn .col.no{background:var(--bg-2)}
+.yn h3{display:flex;align-items:center;gap:10px;margin-bottom:8px;font-size:1.15rem}
+.yn h3 .ic{color:var(--red-2)}
+.yn .col.no h3 .ic{color:var(--muted)}
+.li{display:grid;grid-template-columns:20px 1fr;gap:12px;padding:13px 0;border-top:1px solid var(--line);align-items:start}
+.li .ic{width:18px;height:18px;margin-top:3px;color:var(--red-2)}
+.no .li .ic{color:var(--muted-2)}
+.li b{display:block;font-weight:500}
+.li span{color:var(--muted);font-size:.93rem;line-height:1.5}
+
+/* timeline */
+.tl{position:relative;margin-top:40px;padding-left:46px}
+.tl::before{content:"";position:absolute;left:17px;top:6px;bottom:6px;width:1px;background:var(--line-2)}
+.tl .draw{position:absolute;left:17px;top:6px;width:1px;height:0;background:linear-gradient(180deg,#FF5A66,#8A1020);transition:height 1.8s var(--ease)}
+.tl.in .draw{height:calc(100% - 12px)}
+.ev{position:relative;padding:0 0 34px}
+.ev .dot{position:absolute;left:-46px;top:0;width:36px;height:36px;border-radius:50%;background:var(--surface);border:1px solid var(--line-2);display:grid;place-items:center;color:var(--text);transform:scale(0);transition:transform .5s var(--ease)}
+.ev .dot .ic{width:16px;height:16px}
+.ev.in .dot{transform:scale(1)}
+.ev .yr{font-family:var(--serif);font-size:1.9rem;line-height:1;color:var(--red-2);letter-spacing:-.02em}
+.ev h3{margin-top:6px}
+.ev p{color:var(--muted);font-size:.95rem;margin-top:6px}
+.ev .pill{display:inline-block;margin-top:10px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:6px 10px;border:1px solid var(--line-2);border-radius:999px;color:var(--muted)}
+.ev.hl{padding:20px 20px 26px;margin-left:-12px;border-radius:16px;background:linear-gradient(160deg,rgba(230,57,70,.2),rgba(138,16,32,.05));border:1px solid rgba(230,57,70,.4)}
+.ev.hl .dot{left:-34px;top:20px;background:var(--grad);border-color:transparent;color:#fff}
+.ev.hl .pill{border-color:var(--red);color:var(--red-2)}
+
+/* steps */
+.steps{counter-reset:s;margin-top:30px;display:grid;gap:10px}
+.step{display:grid;grid-template-columns:48px 1fr;gap:14px;padding:20px 18px;border-radius:16px;background:var(--surface);border:1px solid var(--line)}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:var(--serif);font-size:1.9rem;line-height:1;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.step h3{font-size:1.15rem;margin-bottom:5px}
+.step p{color:var(--muted);font-size:.95rem}
+.disclaimer{margin-top:20px;font-size:.86rem;color:var(--muted-2)}
+
+/* literature */
+details{margin-top:6px}
+summary{cursor:pointer;list-style:none;padding:18px 0;display:flex;align-items:center;justify-content:space-between;font-family:var(--serif);font-size:1.5rem}
+summary::-webkit-details-marker{display:none}
+summary .pm{width:30px;height:30px;border:1px solid var(--line-2);border-radius:50%;display:grid;place-items:center;color:var(--red-2);transition:transform .4s var(--ease);font-family:var(--sans)}
+details[open] summary .pm{transform:rotate(45deg)}
+.src{padding-bottom:20px}
+.src a{display:block;padding:9px 0;border-top:1px solid var(--line);color:var(--muted);text-decoration:none;font-size:.9rem;line-height:1.4}
+.src a:hover{color:var(--text)}
+.src a b{color:var(--text);font-weight:500}
+
+footer{padding:56px 0 44px;border-top:1px solid var(--line);color:var(--muted)}
+footer .sig{font-family:var(--serif);font-size:1.6rem;color:var(--text);line-height:1.2}
+footer .how{margin-top:14px;max-width:38em;font-size:.95rem;line-height:1.55}
+footer .meta{margin-top:18px;font-size:.86rem;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+footer .meta .ic{width:16px;height:16px;color:var(--red-2)}
+
+.meme{margin:40px auto 0;max-width:520px}
+.meme .fr{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line-2);background:var(--surface);transform:rotate(-1.2deg);transition:transform .6s var(--ease)}
+.meme img{display:block;width:100%;height:auto}
+.meme figcaption{margin-top:14px;text-align:center;font-family:var(--serif);font-style:italic;font-size:1.1rem;color:var(--muted);line-height:1.4}
+.meme figcaption b{font-style:normal;color:var(--red-2);font-weight:500}
+/* ambient motion (transforms + opacity only) */
+.batfly{position:absolute;top:18%;left:0;width:22px;height:22px;color:var(--red-2);opacity:0;pointer-events:none;z-index:2;animation:glide 11s linear infinite 3s}
+.batfly svg{width:100%;height:100%;animation:flapwing .22s ease-in-out infinite alternate;transform-origin:50% 45%}
+@keyframes glide{0%{transform:translate(-12vw,0) rotate(6deg);opacity:0}3%{opacity:.85}12%{transform:translate(18vw,-26px) rotate(-4deg)}24%{transform:translate(48vw,10px) rotate(5deg)}36%{transform:translate(80vw,-22px) rotate(-3deg)}44%{transform:translate(112vw,4px) rotate(4deg);opacity:.85}46%,100%{transform:translate(112vw,4px);opacity:0}}
+@keyframes flapwing{from{transform:scaleY(1)}to{transform:scaleY(.55)}}
+.embers{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+.embers i{position:absolute;bottom:-10px;width:4px;height:4px;border-radius:50%;background:var(--red-2);opacity:0;animation:ember linear infinite;box-shadow:0 0 6px 1px rgba(230,57,70,.5)}
+@keyframes ember{0%{transform:translate(0,0) scale(.6);opacity:0}10%{opacity:.75}60%{opacity:.5}100%{transform:translate(var(--dx),-72vh) scale(1.1);opacity:0}}
+.herocat{perspective:600px}
+.herocat img{animation:bob 4.2s ease-in-out infinite alternate;transform-origin:50% 60%}
+@keyframes bob{from{transform:translateY(0) rotate(0)}to{transform:translateY(-5px) rotate(.6deg)}}
+.herocat.tilt img{animation:none;transition:transform .35s var(--ease)}
+.ev.hl{position:relative}
+.ev.hl::after{content:"";position:absolute;inset:-1px;border-radius:16px;box-shadow:0 0 46px 2px rgba(230,57,70,.32);opacity:.25;pointer-events:none;animation:breathe2 3.6s ease-in-out infinite alternate}
+@keyframes breathe2{from{opacity:.15}to{opacity:.8}}
+.bar.drug .fill{position:relative;overflow:visible}
+.bar.drug .fill::after{content:"";position:absolute;right:-3px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:var(--red-2);box-shadow:0 0 0 0 rgba(255,90,102,.6);opacity:0}
+.in .bar.drug .fill::after{animation:tip 2.2s ease-out infinite 1.4s}
+@keyframes tip{0%{opacity:1;box-shadow:0 0 0 0 rgba(255,90,102,.55)}70%{opacity:1;box-shadow:0 0 0 9px rgba(255,90,102,0)}100%{opacity:1;box-shadow:0 0 0 0 rgba(255,90,102,0)}}
+.step::before{background-size:220% 100%;animation:shimmer 6s linear infinite}
+@keyframes shimmer{from{background-position:0% 50%}to{background-position:220% 50%}}
+.meme .fr{animation:sway 5.5s ease-in-out infinite alternate}
+.meme:nth-of-type(even) .fr{animation-duration:6.5s;animation-direction:alternate-reverse}
+@keyframes sway{from{transform:rotate(-1.3deg)}to{transform:rotate(-.4deg)}}
+.meme:hover .fr{animation-play-state:paused}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:calc(var(--i,0)*80ms)}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:719px){
+  .crow .lab{flex-direction:column;align-items:flex-start;gap:2px}
+}
+@media (min-width:720px){
+  :root{--gutter:40px}
+  section{padding:110px 0}
+  .ladder{grid-template-columns:repeat(2,1fr);gap:14px}
+  .duo{grid-template-columns:1fr 1fr;gap:14px}
+  .yn{grid-template-columns:1fr 1fr;gap:14px}
+  .src{columns:2;column-gap:40px}
+  .tldr .row p{font-size:1.5rem}
+  .two{display:grid;grid-template-columns:5fr 7fr;gap:48px;align-items:end}
+  .chart{padding:30px 28px 22px}
+  .bar{grid-template-columns:1fr 56px}
+}
+@media (min-width:1000px){
+  .ladder{grid-template-columns:repeat(4,1fr)}
+  .rung{grid-template-columns:1fr;gap:14px}
+  .ladder::before{content:"";position:absolute;left:5%;right:5%;top:46px;height:1px;background:var(--line-2);z-index:0}
+  .rung{z-index:1}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}.hero h1 .w span{transform:none}.hero .lede,.hero .cta,.dedic{opacity:1}
+  .in .bar .fill,.bar .fill{width:var(--w)}.pips i{transform:none}.tl .draw{height:calc(100% - 12px)}.ev .dot{transform:scale(1)}
+}
+
+/* stays: photo-first location cards */
+.hero{min-height:auto;padding:92px 0 34px}.hero .cta{margin-top:26px}
+section.loc{padding:0 0 60px;border-top:0;scroll-margin-top:0}
+.gal{position:relative;background:#000}
+.gal .track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.gal .track::-webkit-scrollbar{display:none}
+.gal img{flex:0 0 100%;width:100%;aspect-ratio:3/2;object-fit:cover;scroll-snap-align:center;scroll-snap-stop:always;display:block;background:var(--surface)}
+.gal .count,.gal .hint{position:absolute;bottom:12px;font-size:12px;letter-spacing:.06em;padding:5px 10px;border-radius:999px;background:rgba(11,12,16,.72);color:var(--text)}
+.gal .count{right:12px}.gal .hint{left:12px;text-transform:uppercase;letter-spacing:.14em;font-size:10px;color:var(--muted);transition:opacity .4s}
+.gal.moved .hint{opacity:0}
+.gal button{display:none}
+.loc .wrap{padding-top:20px}
+.chiprow{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.chip{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding:6px 11px;border-radius:999px;border:1px solid var(--line-2);color:var(--muted)}
+.chip.lean{background:var(--grad);border-color:transparent;color:#fff}.chip.fin{border-color:var(--red);color:var(--red-2)}
+.num{font-family:var(--serif);color:var(--muted-2)}
+.loc h2{font-size:clamp(2rem,9vw,3.2rem);margin-bottom:6px}
+.where{color:var(--muted);font-size:.95rem}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:18px 0}
+.facts div{padding:13px 10px;border-radius:12px;background:var(--surface);border:1px solid var(--line);min-width:0}
+.facts b{display:block;font-family:var(--serif);font-size:1.5rem;line-height:1.1;font-weight:400}
+.facts small{display:block;margin-top:5px;color:var(--muted);font-size:.74rem;line-height:1.3}
+.pc{display:grid;gap:8px}.pc p{font-size:.98rem;color:var(--muted)}.pc b{color:var(--text);font-weight:500}
+.btn{display:inline-block;margin-top:18px;padding:11px 18px;border-radius:999px;border:1px solid var(--line-2);text-decoration:none;font-size:.9rem;font-weight:500}
+.jump{position:fixed;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:95;display:flex;gap:4px;padding:5px;border-radius:999px;background:rgba(20,22,28,.9);border:1px solid var(--line-2)}
+.jump a{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;text-decoration:none;font-size:.85rem;font-weight:600;color:var(--muted)}
+.jump a.on{background:var(--grad);color:#fff}
+footer{padding-bottom:96px}
+@media (min-width:720px){
+  section.loc{max-width:860px;margin:0 auto;padding-bottom:84px}
+  .gal{border-radius:18px;overflow:hidden;border:1px solid var(--line-2)}
+  .loc .wrap{padding-left:4px;padding-right:4px}
+}
+@media (hover:hover) and (pointer:fine){
+  .gal button{display:grid;place-items:center;position:absolute;top:50%;margin-top:-22px;width:44px;height:44px;border-radius:50%;border:1px solid var(--line-2);background:rgba(11,12,16,.72);color:var(--text);font-size:24px;line-height:1;cursor:pointer}
+  .gal .prev{left:12px}.gal .next{right:12px}.gal .hint{display:none}
+}
+</style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none"><symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" /></symbol><symbol id="i-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></symbol></svg>
+
+<div class="progress" id="progress"></div>
+<nav class="nav"><a class="mark" href="#top">R.</a><span class="chapter" id="chapter">St. Louis</span></nav>
+
+<header class="hero" id="top">
+  <div class="grain"></div><div class="glow"></div>
+  <div class="wrap">
+    <div class="eyebrow" style="opacity:0;animation:fade .8s var(--ease) forwards .05s">St. Louis &middot; Nov 14 to 16</div>
+    <h1 id="h1">Pick a <em>place.</em></h1>
+        <div class="dedic"><span class="ics"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg></span><span>For Ava.</span></div>
+    <p class="lede">Six options, all the photos in one spot. <b>Swipe sideways</b> on any place to see inside. I lean toward the first one. The second is the other real contender.</p>
+    <div class="cta"><span class="line"></span><span>Scroll</span></div>
+  </div>
+</header>
+
+<section class="loc" id="p1" data-chapter="1 / 6 &middot; Urban Hearth">
+  <div class="gal"><div class="track"><img src="https://media.vrbo.com/lodging/123000000/122930000/122927600/122927539/5c781c39.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Urban Hearth, photo 1" referrerpolicy="no-referrer"  decoding="async"><img src="https://media.vrbo.com/lodging/123000000/122930000/122927600/122927539/0a361c39.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Urban Hearth, photo 2" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/123000000/122930000/122927600/122927539/d694a78c.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Urban Hearth, photo 3" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/123000000/122930000/122927600/122927539/e74030c5.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Urban Hearth, photo 4" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/123000000/122930000/122927600/122927539/847cb41a.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Urban Hearth, photo 5" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/123000000/122930000/122927600/122927539/34f637dc.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Urban Hearth, photo 6" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/123000000/122930000/122927600/122927539/0f08a775.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Urban Hearth, photo 7" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/123000000/122930000/122927600/122927539/eaf149ec.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Urban Hearth, photo 8" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/123000000/122930000/122927600/122927539/0718f073.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Urban Hearth, photo 9" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/123000000/122930000/122927600/122927539/81588b98.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Urban Hearth, photo 10" referrerpolicy="no-referrer" loading="lazy" decoding="async"></div><button class="prev" aria-label="Previous photo">&#8249;</button><button class="next" aria-label="Next photo">&#8250;</button><span class="count">1 / 10</span><span class="hint">Swipe</span></div>
+  <div class="wrap">
+    <div class="chiprow"><span class="chip lean">My lean</span><span class="num">1 / 6</span></div>
+    <h2>Urban Hearth</h2><p class="where">Tower Grove South &middot; 1 min walk to the park</p>
+    <div class="facts"><div><b>$356</b><small>2 nights, before taxes</small></div><div><b>9.6</b><small>from 10 reviews</small></div><div><b>1 bed</b><small>plus a daybed</small></div></div>
+    <div class="pc"><p><b>Why:</b> Best looking one. New kitchen and bathroom, fireplaces, covered porch.</p><p><b>Catch:</b> A flat in a four-door building, not a whole house. Baseball everywhere.</p></div>
+    <a class="btn" href="https://www.vrbo.com/4953162?chkin=2026-11-14&amp;chkout=2026-11-16&amp;adults=2" target="_blank" rel="noopener">Open on Vrbo</a>
+  </div>
+</section>
+<section class="loc" id="p2" data-chapter="2 / 6 &middot; Cozy Gem">
+  <div class="gal"><div class="track"><img src="https://media.vrbo.com/lodging/124000000/123140000/123139600/123139562/f3d1f94e.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Cozy Gem, photo 1" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/124000000/123140000/123139600/123139562/0878d2a4.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Cozy Gem, photo 2" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/124000000/123140000/123139600/123139562/edaac136.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Cozy Gem, photo 3" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/124000000/123140000/123139600/123139562/fb0cc69c.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Cozy Gem, photo 4" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/124000000/123140000/123139600/123139562/037df1ef.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Cozy Gem, photo 5" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/124000000/123140000/123139600/123139562/41f42fb1.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Cozy Gem, photo 6" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/124000000/123140000/123139600/123139562/49172496.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Cozy Gem, photo 7" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/124000000/123140000/123139600/123139562/10eec0db.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Cozy Gem, photo 8" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/124000000/123140000/123139600/123139562/313f1e9d.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Cozy Gem, photo 9" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/124000000/123140000/123139600/123139562/99352435.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Cozy Gem, photo 10" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/124000000/123140000/123139600/123139562/3a850d75.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Cozy Gem, photo 11" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/124000000/123140000/123139600/123139562/66cff7b1.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Cozy Gem, photo 12" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/124000000/123140000/123139600/123139562/1237ae9d.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Cozy Gem, photo 13" referrerpolicy="no-referrer" loading="lazy" decoding="async"></div><button class="prev" aria-label="Previous photo">&#8249;</button><button class="next" aria-label="Next photo">&#8250;</button><span class="count">1 / 13</span><span class="hint">Swipe</span></div>
+  <div class="wrap">
+    <div class="chiprow"><span class="chip fin">Other finalist</span><span class="num">2 / 6</span></div>
+    <h2>Cozy Gem</h2><p class="where">Clifton Heights &middot; 5 min drive to the zoo</p>
+    <div class="facts"><div><b>TBD</b><small>price, checking</small></div><div><b>10</b><small>from 9 reviews</small></div><div><b>1 bed</b><small>plus a daybed</small></div></div>
+    <div class="pc"><p><b>Why:</b> Whole house to ourselves. Driveway, fenced yard, gym in the basement.</p><p><b>Catch:</b> Plainer inside. Older bathroom, basic beds.</p></div>
+    <a class="btn" href="https://www.vrbo.com/4964939?chkin=2026-11-14&amp;chkout=2026-11-16&amp;adults=2" target="_blank" rel="noopener">Open on Vrbo</a>
+  </div>
+</section>
+<section class="loc" id="p3" data-chapter="3 / 6 &middot; Hi-Pointe Cottage">
+  <div class="gal"><div class="track"><img src="https://media.vrbo.com/lodging/112000000/111050000/111047600/111047555/e418d36b.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Hi-Pointe Cottage, photo 1" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/112000000/111050000/111047600/111047555/56a95884.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Hi-Pointe Cottage, photo 2" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/112000000/111050000/111047600/111047555/40b2820c.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Hi-Pointe Cottage, photo 3" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/112000000/111050000/111047600/111047555/0966905c.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Hi-Pointe Cottage, photo 4" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/112000000/111050000/111047600/111047555/46a0deb0.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Hi-Pointe Cottage, photo 5" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/112000000/111050000/111047600/111047555/540e43c5.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Hi-Pointe Cottage, photo 6" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/112000000/111050000/111047600/111047555/c200178e.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Hi-Pointe Cottage, photo 7" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/112000000/111050000/111047600/111047555/92a8109e.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Hi-Pointe Cottage, photo 8" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/112000000/111050000/111047600/111047555/8ece6395.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Hi-Pointe Cottage, photo 9" referrerpolicy="no-referrer" loading="lazy" decoding="async"></div><button class="prev" aria-label="Previous photo">&#8249;</button><button class="next" aria-label="Next photo">&#8250;</button><span class="count">1 / 9</span><span class="hint">Swipe</span></div>
+  <div class="wrap">
+    <div class="chiprow"><span class="chip ">If we want two kings</span><span class="num">3 / 6</span></div>
+    <h2>Hi-Pointe Cottage</h2><p class="where">Hi-Pointe &middot; by Forest Park and the zoo</p>
+    <div class="facts"><div><b>$498</b><small>2 nights, before taxes</small></div><div><b>9.8</b><small>from 7 reviews</small></div><div><b>2 kings</b><small>two real bedrooms</small></div></div>
+    <div class="pc"><p><b>Why:</b> Whole brick cottage, two king beds, fenced yard and a deck.</p><p><b>Catch:</b> About $140 more than the first one for a plainer inside.</p></div>
+    <a class="btn" href="https://www.vrbo.com/4306082?chkin=2026-11-14&amp;chkout=2026-11-16&amp;adults=2" target="_blank" rel="noopener">Open on Vrbo</a>
+  </div>
+</section>
+<section class="loc" id="p4" data-chapter="4 / 6 &middot; Home Sweet Home">
+  <div class="gal"><div class="track"><img src="https://media.vrbo.com/lodging/137000000/136980000/136971800/136971735/307a3c93.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Home Sweet Home, photo 1" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/137000000/136980000/136971800/136971735/ab28e452.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Home Sweet Home, photo 2" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/137000000/136980000/136971800/136971735/10b644f0.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Home Sweet Home, photo 3" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/137000000/136980000/136971800/136971735/f3f4d243.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Home Sweet Home, photo 4" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/137000000/136980000/136971800/136971735/14ad85aa.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Home Sweet Home, photo 5" referrerpolicy="no-referrer" loading="lazy" decoding="async"></div><button class="prev" aria-label="Previous photo">&#8249;</button><button class="next" aria-label="Next photo">&#8250;</button><span class="count">1 / 5</span><span class="hint">Swipe</span></div>
+  <div class="wrap">
+    <div class="chiprow"><span class="chip ">Probably not</span><span class="num">4 / 6</span></div>
+    <h2>Home Sweet Home</h2><p class="where">Glasgow Village &middot; far north county</p>
+    <div class="facts"><div><b>$490</b><small>2 nights, before taxes</small></div><div><b>0</b><small>reviews so far</small></div><div><b>Far</b><small>north of the city</small></div></div>
+    <div class="pc"><p><b>Why:</b> Fresh and tidy.</p><p><b>Catch:</b> No reviews, and a long way from anything we would do.</p></div>
+    <a class="btn" href="https://www.vrbo.com/5508080?chkin=2026-11-14&amp;chkout=2026-11-16&amp;adults=2" target="_blank" rel="noopener">Open on Vrbo</a>
+  </div>
+</section>
+<section class="loc" id="p5" data-chapter="5 / 6 &middot; Autumn Retreat">
+  <div class="gal"><div class="track"><img src="https://media.vrbo.com/lodging/120000000/119750000/119749600/119749544/a15016ae.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Autumn Retreat, photo 1" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/120000000/119750000/119749600/119749544/974596c4.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Autumn Retreat, photo 2" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/120000000/119750000/119749600/119749544/05c3cf4e.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Autumn Retreat, photo 3" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/120000000/119750000/119749600/119749544/2950cb6c.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Autumn Retreat, photo 4" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/120000000/119750000/119749600/119749544/2a88e248.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Autumn Retreat, photo 5" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/120000000/119750000/119749600/119749544/13355c1a.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Autumn Retreat, photo 6" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/120000000/119750000/119749600/119749544/54798a8f.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Autumn Retreat, photo 7" referrerpolicy="no-referrer" loading="lazy" decoding="async"></div><button class="prev" aria-label="Previous photo">&#8249;</button><button class="next" aria-label="Next photo">&#8250;</button><span class="count">1 / 7</span><span class="hint">Swipe</span></div>
+  <div class="wrap">
+    <div class="chiprow"><span class="chip ">Probably not</span><span class="num">5 / 6</span></div>
+    <h2>Autumn Retreat</h2><p class="where">Columbia, Illinois &middot; 14 miles out</p>
+    <div class="facts"><div><b>$508</b><small>2 nights, before taxes</small></div><div><b>10</b><small>from 11 reviews</small></div><div><b>14 mi</b><small>from St. Louis</small></div></div>
+    <div class="pc"><p><b>Why:</b> Quiet and well reviewed.</p><p><b>Catch:</b> It is in Illinois.</p></div>
+    <a class="btn" href="https://www.vrbo.com/20187625ha?chkin=2026-11-14&amp;chkout=2026-11-16&amp;adults=2" target="_blank" rel="noopener">Open on Vrbo</a>
+  </div>
+</section>
+<section class="loc" id="p6" data-chapter="6 / 6 &middot; Bohemian Loft">
+  <div class="gal"><div class="track"><img src="https://media.vrbo.com/lodging/85000000/84060000/84055200/84055195/28eb70b4.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Bohemian Loft, photo 1" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/85000000/84060000/84055200/84055195/03243a78.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Bohemian Loft, photo 2" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/85000000/84060000/84055200/84055195/0d0de380.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Bohemian Loft, photo 3" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/85000000/84060000/84055200/84055195/d77fc01e.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Bohemian Loft, photo 4" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/85000000/84060000/84055200/84055195/8bc9fc5d.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Bohemian Loft, photo 5" referrerpolicy="no-referrer" loading="lazy" decoding="async"><img src="https://media.vrbo.com/lodging/85000000/84060000/84055200/84055195/7ad657ab.jpg?impolicy=resizecrop&amp;rw=900&amp;ra=fit" alt="Bohemian Loft, photo 6" referrerpolicy="no-referrer" loading="lazy" decoding="async"></div><button class="prev" aria-label="Previous photo">&#8249;</button><button class="next" aria-label="Next photo">&#8250;</button><span class="count">1 / 6</span><span class="hint">Swipe</span></div>
+  <div class="wrap">
+    <div class="chiprow"><span class="chip ">Probably not</span><span class="num">6 / 6</span></div>
+    <h2>Bohemian Loft</h2><p class="where">North of downtown &middot; warehouse district</p>
+    <div class="facts"><div><b>$550</b><small>2 nights, before taxes</small></div><div><b>9.6</b><small>guest rating</small></div><div><b>Bunks</b><small>one open room</small></div></div>
+    <div class="pc"><p><b>Why:</b> Big brick warehouse with character.</p><p><b>Catch:</b> Built for groups. Bunk beds in one open room.</p></div>
+    <a class="btn" href="https://www.vrbo.com/2980367?chkin=2026-11-14&amp;chkout=2026-11-16&amp;adults=2" target="_blank" rel="noopener">Open on Vrbo</a>
+  </div>
+</section>
+
+<nav class="jump" aria-label="Places"><a href="#p1" aria-label="Urban Hearth">1</a><a href="#p2" aria-label="Cozy Gem">2</a><a href="#p3" aria-label="Hi-Pointe Cottage">3</a><a href="#p4" aria-label="Home Sweet Home">4</a><a href="#p5" aria-label="Autumn Retreat">5</a><a href="#p6" aria-label="Bohemian Loft">6</a></nav>
+
+<footer>
+  <div class="wrap">
+    <div class="sig">Tell me which one.</div>
+    <p class="how">Prices are the Vrbo nightly rate times two, before taxes and fees. I had a research agent pull the listings and photos together.</p>
+    <div class="meta"><span>Nov 14 to 16 &middot; <a href="#top">Back to top</a></span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // self-update: if a newer build is published, reload this tab
+  var mine=(document.querySelector('meta[name="build"]')||{}).content;
+  function check(){
+    fetch(location.pathname+'?v='+Date.now(),{cache:'no-store'}).then(function(r){return r.text()}).then(function(t){
+      var m=t.match(/name="build" content="([^"]+)"/); if(m&&mine&&m[1]!==mine) location.reload();
+    }).catch(function(){});
+  }
+  setInterval(check,45000);
+  document.addEventListener('visibilitychange',function(){ if(!document.hidden) check(); });
+})();
+(function(){
+  var h1=document.getElementById('h1'), i=0;
+  h1.innerHTML=h1.innerHTML.split(/(<em>.*?<\/em>|\s+)/).filter(Boolean).map(function(t){
+    if(/^\s+$/.test(t)) return ' ';
+    return '<span class="w"><span style="--i:'+(i++)+'">'+t+'</span></span>';
+  }).join('');
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+  document.querySelectorAll('.reveal,.tl').forEach(function(el){ io.observe(el); });
+  var bar=document.getElementById('progress'), label=document.getElementById('chapter');
+  var secs=[].slice.call(document.querySelectorAll('[data-chapter]'));
+  function onScroll(){
+    var h=document.documentElement, max=h.scrollHeight-h.clientHeight;
+    bar.style.width=(max>0?(h.scrollTop/max*100):0)+'%';
+    var y=h.scrollTop+window.innerHeight*0.4, cur='St. Louis';
+    for(var k=0;k<secs.length;k++){ if(secs[k].offsetTop<=y) cur=secs[k].dataset.chapter; }
+    if(label.textContent!==cur) label.textContent=cur;
+  }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  // desktop only: the hero cat tilts toward the cursor; phones keep the bob
+  if(window.matchMedia('(hover:hover) and (pointer:fine)').matches){
+    var hc=document.querySelector('.herocat'), hero=document.querySelector('.hero');
+    if(hc&&hero){
+      hero.addEventListener('mousemove',function(e){
+        var r=hc.getBoundingClientRect(), cx=r.left+r.width/2, cy=r.top+r.height/2;
+        var dx=(e.clientX-cx)/window.innerWidth, dy=(e.clientY-cy)/window.innerHeight;
+        hc.classList.add('tilt');
+        hc.querySelector('img').style.transform='rotateY('+(dx*14)+'deg) rotateX('+(-dy*10)+'deg) translateY(-2px)';
+      });
+      hero.addEventListener('mouseleave',function(){ hc.classList.remove('tilt'); hc.querySelector('img').style.transform=''; });
+    }
+  }
+})();
+</script>
+<script>
+(function(){
+  document.querySelectorAll('.gal').forEach(function(g){
+    var t=g.querySelector('.track'), c=g.querySelector('.count'), n=t.children.length, raf=0;
+    t.addEventListener('scroll',function(){ if(raf) return; raf=requestAnimationFrame(function(){ raf=0;
+      var i=Math.round(t.scrollLeft/t.clientWidth)+1; c.textContent=i+' / '+n; if(i>1) g.classList.add('moved'); }); },{passive:true});
+    g.querySelector('.prev').addEventListener('click',function(){ t.scrollBy({left:-t.clientWidth,behavior:'smooth'}); });
+    g.querySelector('.next').addEventListener('click',function(){ t.scrollBy({left:t.clientWidth,behavior:'smooth'}); });
+  });
+  var links=[].slice.call(document.querySelectorAll('.jump a')), locs=[].slice.call(document.querySelectorAll('section.loc'));
+  function mark(){ var y=window.scrollY+window.innerHeight*0.45, cur=-1;
+    for(var k=0;k<locs.length;k++){ if(locs[k].offsetTop<=y) cur=k; }
+    links.forEach(function(a,k){ a.classList.toggle('on',k===cur); }); }
+  window.addEventListener('scroll',mark,{passive:true}); mark();
+})();
+</script>
+</body>
+</html>
